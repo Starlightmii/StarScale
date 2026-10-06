@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="StarScale — AI and GPU image upscaler">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a2e"/>
+      <stop offset=".55" stop-color="#141044"/>
+      <stop offset="1" stop-color="#1e0a3e"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f6ff"/>
+      <stop offset=".38" stop-color="#ffffff"/>
+      <stop offset=".52" stop-color="#c9d6e8"/>
+      <stop offset=".68" stop-color="#ff9ecf"/>
+      <stop offset=".85" stop-color="#7de8e0"/>
+      <stop offset="1" stop-color="#9ad34f"/>
+    </linearGradient>
+    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"/>
+      <stop offset=".33" stop-color="#7de8e0"/>
+      <stop offset=".66" stop-color="#9ad34f"/>
+      <stop offset="1" stop-color="#ff9ecf"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#7de8e0"/>
+      <stop offset="1" stop-color="#ff9ecf" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity=".05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#scan)"/>
+
+  <!-- holo sheen bands -->
+  <polygon points="180,0 300,0 60,320 -60,320" fill="#ff9ecf" opacity=".07"/>
+  <polygon points="620,0 700,0 420,320 340,320" fill="#7de8e0" opacity=".06"/>
+  <polygon points="1120,0 1200,0 1000,320 920,320" fill="#9ad34f" opacity=".06"/>
+
+  <!-- top + bottom chrome edges -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#holo)"/>
+  <rect x="0" y="314" width="1200" height="6" fill="url(#holo)"/>
+
+  <!-- sparkles -->
+  <g fill="#ffffff">
+    <path d="M150 84 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" opacity=".9"/>
+    <path d="M1042 70 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" fill="#ff9ecf" opacity=".9"/>
+    <path d="M980 240 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#7de8e0" opacity=".85"/>
+    <path d="M210 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#9ad34f" opacity=".8"/>
+    <path d="M598 46 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z" opacity=".8"/>
+    <circle cx="300" cy="60" r="2" opacity=".7"/>
+    <circle cx="900" cy="270" r="2" fill="#ff9ecf" opacity=".7"/>
+    <circle cx="760" cy="52" r="1.6" fill="#7de8e0" opacity=".8"/>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="188" text-anchor="middle"
+        font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900"
+        font-size="104" letter-spacing="10" fill="url(#chrome)"
+        stroke="#20204a" stroke-width="2">STARSCALE</text>
+  <!-- holo echo behind title -->
+  <text x="600" y="192" text-anchor="middle"
+        font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900"
+        font-size="104" letter-spacing="10" fill="none"
+        stroke="#ff9ecf" stroke-opacity=".35" stroke-width="1.5">STARSCALE</text>
+
+  <!-- subtitle -->
+  <text x="600" y="238" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="24" letter-spacing="10" fill="#7de8e0">AI × GPU IMAGE UPSCALER</text>
+
+  <!-- divider line + footer strip -->
+  <rect x="330" y="262" width="540" height="2" fill="url(#edge)"/>
+  <text x="600" y="292" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="17" letter-spacing="5" fill="#b8b8d8">✦ ONE FILE · NO INSTALL · WORKS OFFLINE ✦</text>
+</svg>

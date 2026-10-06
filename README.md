@@ -1,91 +1,148 @@
-# StarScale
+<div align="center">
 
-**AI & GPU image upscaler — one HTML file, no install, no server.**
+<img src="assets/banner.svg" alt="StarScale — AI × GPU image upscaler" width="100%">
 
-Open `index.html` in any modern browser (Chrome / Edge / Firefox, desktop or Android) and start upscaling. Everything — UI, WebGL2 shaders, AI worker — lives in this single file.
+[![release](https://img.shields.io/github/v/release/Starlightmii/StarScale?style=for-the-badge&color=ff9ecf&labelColor=141044)](https://github.com/Starlightmii/StarScale/releases)
+[![license](https://img.shields.io/github/license/Starlightmii/StarScale?style=for-the-badge&color=7de8e0&labelColor=141044)](LICENSE)
+[![size](https://img.shields.io/badge/app_size-218_KB-9ad34f?style=for-the-badge&labelColor=141044)](index.html)
+[![no server](https://img.shields.io/badge/server-NONE_%E2%9C%A6_file%3A%2F%2F_ok-ff9ecf?style=for-the-badge&labelColor=141044)](#why-it-works-from-file)
 
+**one html file · two engines · zero install**
+
+*point it at a blurry photo → watch the stars do the rest* ✦
+
+</div>
+
+<img src="assets/divider.svg" width="100%">
+
+## ✦ what is this
+
+**StarScale** is an AI & GPU image upscaler that lives in a *single `.html` file*.
+No install. No server. No build step. Open it in Chrome — desktop **or** Android —
+and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernels.
+
+> ✧ the whole app — UI, GLSL shaders, the AI worker — is one file you can email to someone ✧
+
+```text
+      blurry jpg ──▶  ★ STARSCALE ★  ──▶  crisp 4× export
+                     ╱                ╲
+             AI neural engine      GPU resample engine
+           (ONNX Runtime Web)      (WebGL2 Lanczos3)
 ```
-AI (Real-ESRGAN family, ONNX)  ·  GPU (WebGL2 Lanczos/Catmull-Rom/B-spline)
-Batch queue  ·  Color grading  ·  Crop  ·  Face recovery  ·  Compare modes
-Export PNG/WebP/JPEG or ZIP  ·  Works from file://
-```
 
-## Quick start
-
-**Desktop:** double-click `index.html`. Done.
-
-**Android:** open the file in Chrome (e.g. via your Files app → open with Chrome), or serve it:
+## ⚡ quick start
 
 ```bash
-python3 -m http.server 8000   # then visit http://localhost:8000
+# desktop — that's it:
+xdg-open index.html
+
+# android — open index.html with Chrome (Files app → open with),
+# or serve it:
+python3 -m http.server 8000   # → http://localhost:8000
 ```
 
-Optional — add it as an app: Chrome menu → *Add to Home screen*.
+Chrome menu → **Add to Home screen** = instant PWA. ✦
 
-## Two engines
+## 🛰 two engines, one file
 
-| | GPU Resample | AI Neural |
+| | ☆ GPU RESAMPLE | ★ AI NEURAL |
 |---|---|---|
-| Tech | WebGL2, separable kernels | ONNX Runtime Web in a Web Worker |
-| Models | Lanczos3 · Catmull-Rom · B-spline · nearest + edge-aware detail pass | Real-ESRGAN v3 · PurePhoto SPAN · ClearReality · Rybu (anime) · SPAN 2× · RealPLKSR HQ · DeJPEG pre-pass |
-| Speed | Instant, any size | Tiled, minutes for large images |
-| Download | Nothing | Model (~1.7–29 MB) fetched once from Hugging Face, cached in IndexedDB |
+| **tech** | WebGL2, separable kernels | ONNX Runtime Web in a Blob worker |
+| **kernels** | Lanczos3 · Catmull-Rom · B-spline · nearest | 7 models + custom `.onnx` |
+| **detail pass** | edge-aware sharpening | tiled super-resolution |
+| **speed** | ⚡ instant, any size | 🕐 tiled, minutes for big images |
+| **download** | nothing. ever. | model (1.7–29 MB) once, then IndexedDB cache |
 
-The app **analyzes each import** (subject type, noise, blur, JPEG artefacts, exposure) and recommends an engine/model — you can always override.
+**the model shelf** — fetched from Hugging Face, cached forever after:
 
-GPU resample runs fully offline. AI models download from Hugging Face on first use and are then cached; there is also a *Custom .onnx* picker for any ONNX super-resolution model on your device.
+```
+realesr-x4v3      4×   general        ★ the sensible default
+purephoto-span    4×   photos+faces   tiny & fast
+clearreality      4×   general        smallest general model
+rybu              4×   anime/lineart  illustrations go brrr
+span-2x           2×   general        when only 2× is wanted
+realplksr-hq      4×   photos         best photo quality (heavy)
+dejpeg            1×   pre-pass       strips jpeg artefacts first
++ custom .onnx    any  any            bring your own weights
+```
 
-## Features
+✦ the app *analyzes every import* — subject, noise, blur, jpeg artefacts, exposure —
+and recommends an engine/model. override it whenever you want.
 
-- **Import analysis + recommendations** — rule-based, transparent, one-tap apply
-- **Presets** — quick quality/speed trade-offs
-- **Output & memory estimator** before you commit
-- **Color grading** (GLSL) — neutral by default, nothing is changed without you asking
-- **Crop** before upscaling
-- **Face detection + recovery** (UltraFace ONNX) for portrait work
-- **Compare modes** — split, side-by-side, difference, flicker
-- **Batch queue** with drag-reorder, per-item engine/model override
-- **Export** — PNG / JPEG / WebP, EXIF preserved on JPEG, or all-at-once ZIP
-- **Share** via the native share sheet on Android
-- **History** of recent runs
-- **Command palette** (Ctrl/Cmd-K) · light "paper" and dark "pro" themes
+## 🎛 the workspace
 
-## Why it works from `file://`
+- **import analysis + one-tap recommendations** — rule-based, transparent
+- **presets** — quality/speed dials without the dials
+- **output & memory estimator** — know before you commit
+- **color grading** — GLSL, neutral by default, nothing touches your pixels uninvited
+- **crop** — frame it before you scale it
+- **face detection + recovery** — UltraFace ONNX for portrait rescue
+- **compare modes** — split ✦ side-by-side ✦ difference ✦ flicker
+- **batch queue** — drag-reorder, per-item engine/model override
+- **export** — PNG / JPEG (EXIF preserved) / WebP / all-at-once ZIP
+- **share** — native Android share sheet
+- **command palette** — `Ctrl/Cmd-K`, mouse optional
+- **two themes** — dark *pro* studio / light *paper* print-shop
 
-Most single-file AI demos break when opened directly from disk because browsers block workers and cross-origin scripts on opaque origins. StarScale takes a measured path: it fetches the ONNX Runtime source over HTTP (allowed from `file://`), builds a Blob worker from an inlined worker source string, and injects the runtime via `importScripts`. No server, no bundler. (Verified in Chrome 151; Firefox also works.)
+## ✨ why it works from `file://`
 
-## Privacy
+Everybody says a `file://` page can't run Web Workers, so single-file AI demos
+freeze the main thread. Half true — measured, not assumed:
 
-- Images never leave your device. Inference runs locally (WebGL / WebGPU / WASM).
-- The only network requests are: Google Fonts (visual theme, degrades gracefully offline), ONNX Runtime script (jsDelivr/unpkg), and AI model downloads (Hugging Face) — all fetched once and cached.
-- IndexedDB/localStorage keys are namespaced `starscale.*`.
+```text
+new Worker("https://cdn…/ort.js")     → SecurityError  ✗ BLOCKED
+importScripts("https://cdn…/ort.js")  → NetworkError   ✗ BLOCKED
+fetch("https://cdn…/ort.js")          → HTTP 200       ✓ WORKS
+```
 
-## Security notes / threat model
+So StarScale fetches the ONNX Runtime source over HTTP (allowed), builds a
+Blob worker from an inlined worker string, and injects the runtime via
+`importScripts(blob)`. No server. No bundler. Verified in Chrome 151; Firefox works too.
 
-Built as a **local, single-user tool**. Its `innerHTML` uses interpolate only app-internal constants (scale values, built-in palette labels) — no filenames or user-derived text. Don't host it on a shared origin and don't feed it untrusted model files without understanding them.
+## 🔒 privacy
 
-## Sources & credits
+Images **never leave your device** — inference is local (WebGL / WebGPU / WASM).
+Only network traffic, all cached after first use:
 
-| Component | Source |
+```text
+✦ Google Fonts            → theme faces (degrades offline)
+✦ jsDelivr / unpkg        → ONNX Runtime script
+✦ Hugging Face            → model weights
+```
+
+Storage keys are namespaced `starscale.*` in IndexedDB/localStorage.
+
+## 🧬 sources & credits
+
+| component | source |
 |---|---|
-| ONNX Runtime Web 1.20.0 | [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) via [jsDelivr](https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.0/dist/) / [unpkg](https://unpkg.com/onnxruntime-web@1.20.0/dist/) mirrors |
-| Real-ESRGAN v3 (realesr-general-x4v3, ONNX) | [CoderViking/realesr-general-x4v3-onnx](https://huggingface.co/CoderViking/realesr-general-x4v3-onnx) |
-| PurePhoto SPAN / ClearReality / Rybu / SPAN 2× / DeJPEG / RealPLKSR (ONNX) | [huggingworld/onnx-image-models](https://huggingface.co/huggingworld/onnx-image-models) |
-| UltraFace RFB-320 (face detect, ONNX) | [onnxmodelzoo/version-RFB-320](https://huggingface.co/onnxmodelzoo/version-RFB-320) |
-| Real-ESRGAN (original research) | [xinntao/Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) · paper: *Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data* (Li et al., 2021) |
+| ONNX Runtime Web 1.20.0 | [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) · [jsDelivr](https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.0/dist/) / [unpkg](https://unpkg.com/onnxruntime-web@1.20.0/dist/) |
+| Real-ESRGAN v3 (onnx) | [CoderViking/realesr-general-x4v3-onnx](https://huggingface.co/CoderViking/realesr-general-x4v3-onnx) |
+| SPAN · ClearReality · Rybu · DeJPEG · RealPLKSR (onnx) | [huggingworld/onnx-image-models](https://huggingface.co/huggingworld/onnx-image-models) |
+| UltraFace RFB-320 (face detect) | [onnxmodelzoo/version-RFB-320](https://huggingface.co/onnxmodelzoo/version-RFB-320) |
+| Real-ESRGAN research | [xinntao/Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) — Li et al., 2021 |
 | SPAN architecture | [chenghao-zhuo/span](https://github.com/chenghao-zhuo/span) |
-| IM Fell English, Cardo, Special Elite fonts | [Google Fonts](https://fonts.google.com/) |
+| IM Fell English · Cardo · Special Elite | [Google Fonts](https://fonts.google.com/) |
 
-Model weights keep their respective licenses — check each Hugging Face page before commercial use.
+model weights keep their respective licenses — check each HF page before commercial use.
 
-## Repository layout
+## 🗂 repo layout
 
 ```
-index.html   — the entire app (UI, GLSL, worker, ~4.6k lines)
-README.md
-LICENSE
+index.html      the entire app — UI, GLSL, worker (~4.6k lines)
+assets/         banner + divider SVGs
+README.md       you are here ✦
+LICENSE         MIT
 ```
 
-## License
+<div align="center">
 
-MIT — see [LICENSE](LICENSE).
+<img src="assets/divider.svg" width="100%">
+
+**✦ starlightmii ✦**
+
+*made under the stars in jaipur — for blurry photos everywhere*
+
+⭐ star the repo if it saved your pixels ⭐
+
+</div>
