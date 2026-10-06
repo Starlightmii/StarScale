@@ -116,24 +116,7 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <a href="https://www.youtube.com/watch?v=3AtDnEC4zak" target="_blank" title="▶ We Don't Talk Anymore — Charlie Puth ft. Selena Gomez (official video)"><img src="assets/nowplaying.svg" width="100%" alt="now playing: We Don't Talk Anymore — Charlie Puth ft. Selena Gomez"></a>
 
-<a href="https://www.youtube.com/watch?v=3AtDnEC4zak" target="_blank"><img src="assets/youtube-play.jpg" width="320" alt="▶ We Don't Talk Anymore — play on YouTube"></a>
-
-**▶ WE DON'T TALK ANYMORE** — Charlie Puth ft. Selena Gomez · [play on YouTube ↗](https://www.youtube.com/watch?v=3AtDnEC4zak)
-
-*click the player → official video on YouTube · volume: yes* 🎧
-
-<details>
-<summary>🎼 <b>make the song actually play on this repo page</b> (one-time, 10 seconds)</summary>
-
-GitHub plays **native inline audio** only for files uploaded through its own attachment uploader — there's no API for it, so it's a single manual step:
-
-1. Click the pencil ✏️ to edit this README on github.com
-2. Drag & drop <code>We-Dont-Talk-Anymore-charlie-puth.mp4</code> (already saved in your Downloads) into the editor
-3. GitHub uploads it and drops a <code>user-attachments</code> URL — a real ▶ player renders right here
-4. Keep that URL line, save
-
-The file is a 4.1 MB MP4 (song + animated cover) prepared for exactly this.
-</details>
+<!-- SOUNDTRACK: drag-drop MP4 into this README on github.com to get the native user-attachments player here -->
 
 <img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
 
