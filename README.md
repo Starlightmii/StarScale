@@ -114,7 +114,9 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <div align="center">
 
-<img src="assets/nowplaying.svg" width="100%" alt="now playing: stars did the rest (lanczos3 remix).mid">
+<a href="https://www.youtube.com/watch?v=3AtDnEC4zak" target="_blank" title="▶ We Don't Talk Anymore — Charlie Puth ft. Selena Gomez (official video)"><img src="assets/nowplaying.svg" width="100%" alt="now playing: We Don't Talk Anymore — Charlie Puth ft. Selena Gomez"></a>
+
+*click the player → official video on YouTube · volume: yes* 🎧
 
 <img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
 
