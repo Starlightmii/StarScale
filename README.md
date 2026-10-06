@@ -23,7 +23,11 @@ and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernel
 
 > ✧ the whole app — UI, GLSL shaders, the AI worker — is one file you can email to someone ✧
 
+<img src="assets/marquee.svg" width="100%" alt="">
+
 <img src="assets/flow.svg" alt="blurry.jpg → ★ STARSCALE ★ → crisp.png ×4" width="100%">
+
+<img src="assets/pixels.svg" alt="an 8×8 pixel heart upscaled 2× then 4× — same file, more stars" width="100%">
 
 ## ⚡ quick start
 
@@ -78,6 +82,8 @@ and recommends an engine/model. override it whenever you want.
 - **share** — native Android share sheet
 - **command palette** — `Ctrl/Cmd-K`, mouse optional
 - **two themes** — dark *pro* studio / light *paper* print-shop
+
+<img src="assets/constellation.svg" width="100%" alt="constellation map of StarScale features">
 
 ## ✨ why it works from `file://`
 

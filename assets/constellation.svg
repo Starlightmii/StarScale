@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="330" viewBox="0 0 880 330" role="img" aria-label="constellation map of StarScale features">
+  <defs>
+    <radialGradient id="ngc" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ff9ecf" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ff9ecf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ngc2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7de8e0" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#7de8e0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="880" height="330" fill="#0a0a2e"/>
+  <rect width="880" height="330" fill="url(#ngc)" opacity=".8"/>
+  <rect width="880" height="330" fill="url(#ngc2)" opacity=".8"/>
+
+  <!-- background dust stars -->
+  <g fill="#ffffff">
+    <circle cx="60" cy="40" r="1" opacity=".5"><animate attributeName="opacity" values=".5;.1;.5" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="60" r="1.2" opacity=".4"><animate attributeName="opacity" values=".2;.8;.2" dur="2.6s" begin=".5s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="290" r="1" opacity=".5"><animate attributeName="opacity" values=".6;.15;.6" dur="3.4s" begin=".9s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="280" r="1" opacity=".4"><animate attributeName="opacity" values=".3;.9;.3" dur="2.9s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="450" cy="30" r="1.1" opacity=".5"><animate attributeName="opacity" values=".5;.12;.5" dur="2.2s" begin=".3s" repeatCount="indefinite"/></circle>
+    <circle cx="300" cy="310" r="1" opacity=".4"><animate attributeName="opacity" values=".4;.9;.4" dur="3.1s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="315" r="1" opacity=".4"><animate attributeName="opacity" values=".35;.85;.35" dur="2.7s" begin=".7s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- constellation lines -->
+  <g stroke="#4a4a8a" stroke-width="1" opacity=".8">
+    <path d="M440 90 L250 150 M440 90 L630 150 M250 150 L120 235 M250 150 L330 250 M630 150 L760 235 M630 150 L550 250 M440 90 L440 45"/>
+  </g>
+
+  <!-- feature stars -->
+  <g font-family="'Courier New',monospace" font-size="15">
+    <g><circle cx="440" cy="90" r="7" fill="#ff9ecf"><animate attributeName="r" values="6;8;6" dur="2.4s" repeatCount="indefinite"/></circle>
+       <circle cx="440" cy="90" r="12" fill="none" stroke="#ff9ecf" opacity=".4"><animate attributeName="r" values="9;16;9" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0;.5" dur="2.4s" repeatCount="indefinite"/></circle>
+       <text x="440" y="66" text-anchor="middle" fill="#ff9ecf" font-weight="bold">★ AI × GPU</text></g>
+
+    <g><circle cx="250" cy="150" r="5" fill="#7de8e0"><animate attributeName="opacity" values="1;.4;1" dur="2s" begin=".3s" repeatCount="indefinite"/></circle>
+       <text x="250" y="132" text-anchor="middle" fill="#7de8e0">batch queue</text></g>
+
+    <g><circle cx="630" cy="150" r="5" fill="#9ad34f"><animate attributeName="opacity" values=".4;1;.4" dur="2.2s" begin=".6s" repeatCount="indefinite"/></circle>
+       <text x="630" y="132" text-anchor="middle" fill="#9ad34f">7 models + custom</text></g>
+
+    <g><circle cx="120" cy="235" r="5" fill="#ff9ecf"><animate attributeName="opacity" values=".4;1;.4" dur="1.9s" begin=".9s" repeatCount="indefinite"/></circle>
+       <text x="120" y="217" text-anchor="middle" fill="#ff9ecf">face recovery</text></g>
+
+    <g><circle cx="330" cy="250" r="5" fill="#7de8e0"><animate attributeName="opacity" values="1;.4;1" dur="2.5s" begin="1.1s" repeatCount="indefinite"/></circle>
+       <text x="330" y="272" text-anchor="middle" fill="#7de8e0">grade · crop</text></g>
+
+    <g><circle cx="760" cy="235" r="5" fill="#9ad34f"><animate attributeName="opacity" values=".4;1;.4" dur="2.1s" begin=".4s" repeatCount="indefinite"/></circle>
+       <text x="760" y="217" text-anchor="middle" fill="#9ad34f">zip · exif · share</text></g>
+
+    <g><circle cx="550" cy="250" r="5" fill="#ff9ecf"><animate attributeName="opacity" values="1;.35;1" dur="2.3s" begin="1.3s" repeatCount="indefinite"/></circle>
+       <text x="550" y="272" text-anchor="middle" fill="#ff9ecf">split · flicker</text></g>
+
+    <g><circle cx="440" cy="45" r="4" fill="#ffffff"><animate attributeName="opacity" values="1;.3;1" dur="1.7s" repeatCount="indefinite"/></circle>
+       <text x="440" y="30" text-anchor="middle" fill="#b8b8d8">file:// ✓</text></g>
+  </g>
+
+  <text x="440" y="322" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" letter-spacing="4" fill="#6f695b">— the starscale constellation —</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="54" viewBox="0 0 880 54" role="img" aria-label="scrolling tagline: single file, two engines, zero install, infinite stars">
+  <defs>
+    <linearGradient id="mtop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"><animate attributeName="stop-color" values="#ff9ecf;#7de8e0;#9ad34f;#ff9ecf" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#7de8e0"><animate attributeName="stop-color" values="#7de8e0;#9ad34f;#ff9ecf;#7de8e0" dur="8s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <clipPath id="mwin"><rect x="8" y="10" width="864" height="34" rx="8"/></clipPath>
+  </defs>
+  <rect width="880" height="54" fill="#0a0a2e"/>
+  <rect x="4" y="6" width="872" height="42" rx="10" fill="#141044" stroke="url(#mtop)" stroke-width="1.5"/>
+  <g clip-path="url(#mwin)">
+    <text x="0" y="34" font-family="'Courier New',monospace" font-weight="bold" font-size="19" letter-spacing="3" fill="#7de8e0">
+      ✦ SINGLE FILE ✦ TWO ENGINES ✦ ZERO INSTALL ✦ INFINITE STARS ✦ WORKS OFFLINE ✦ AI × GPU ✦ SINGLE FILE ✦ TWO ENGINES ✦ ZERO INSTALL ✦ INFINITE STARS ✦ WORKS OFFLINE ✦ AI × GPU ✦
+      <animate attributeName="x" values="0;-1050" dur="14s" repeatCount="indefinite"/>
+    </text>
+    <text x="0" y="34" font-family="'Courier New',monospace" font-weight="bold" font-size="19" letter-spacing="3" fill="#ff9ecf" opacity=".35">
+      ✦ SINGLE FILE ✦ TWO ENGINES ✦ ZERO INSTALL ✦ INFINITE STARS ✦ WORKS OFFLINE ✦ AI × GPU ✦ SINGLE FILE ✦ TWO ENGINES ✦ ZERO INSTALL ✦ INFINITE STARS ✦ WORKS OFFLINE ✦ AI × GPU ✦
+      <animate attributeName="x" values="0;-1050" dur="14s" begin="-7s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
