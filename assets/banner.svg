@@ -14,16 +14,27 @@
       <stop offset="1" stop-color="#9ad34f"/>
     </linearGradient>
     <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff9ecf"/>
-      <stop offset=".33" stop-color="#7de8e0"/>
-      <stop offset=".66" stop-color="#9ad34f"/>
-      <stop offset="1" stop-color="#ff9ecf"/>
+      <stop offset="0" stop-color="#ff9ecf">
+        <animate attributeName="stop-color" values="#ff9ecf;#7de8e0;#9ad34f;#ff9ecf" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset=".5" stop-color="#7de8e0">
+        <animate attributeName="stop-color" values="#7de8e0;#9ad34f;#ff9ecf;#7de8e0" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#9ad34f">
+        <animate attributeName="stop-color" values="#9ad34f;#ff9ecf;#7de8e0;#9ad34f" dur="9s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ff9ecf" stop-opacity="0"/>
       <stop offset=".5" stop-color="#7de8e0"/>
       <stop offset="1" stop-color="#ff9ecf" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ffffff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="titleClip"><rect x="140" y="80" width="920" height="130"/></clipPath>
     <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#ffffff" opacity=".05"/>
     </pattern>
@@ -32,44 +43,76 @@
   <rect width="1200" height="320" fill="url(#bg)"/>
   <rect width="1200" height="320" fill="url(#scan)"/>
 
-  <!-- holo sheen bands -->
-  <polygon points="180,0 300,0 60,320 -60,320" fill="#ff9ecf" opacity=".07"/>
-  <polygon points="620,0 700,0 420,320 340,320" fill="#7de8e0" opacity=".06"/>
-  <polygon points="1120,0 1200,0 1000,320 920,320" fill="#9ad34f" opacity=".06"/>
+  <!-- drifting holo sheen bands -->
+  <g>
+    <polygon points="180,0 300,0 60,320 -60,320" fill="#ff9ecf" opacity=".07">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 140,0; 0,0" dur="13s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="620,0 700,0 420,320 340,320" fill="#7de8e0" opacity=".06">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -120,0; 0,0" dur="17s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="1120,0 1200,0 1000,320 920,320" fill="#9ad34f" opacity=".06">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 90,0; 0,0" dur="11s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
 
-  <!-- top + bottom chrome edges -->
+  <!-- top + bottom chrome edges (hue-cycling) -->
   <rect x="0" y="0" width="1200" height="6" fill="url(#holo)"/>
   <rect x="0" y="314" width="1200" height="6" fill="url(#holo)"/>
 
-  <!-- sparkles -->
+  <!-- chrome shine sweeping across the title -->
+  <g clip-path="url(#titleClip)">
+    <rect x="-160" y="60" width="120" height="170" fill="url(#shine)" transform="rotate(18)">
+      <animateTransform attributeName="transform" type="translate" values="-40,0; 1360,0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- twinkling sparkles -->
   <g fill="#ffffff">
-    <path d="M150 84 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" opacity=".9"/>
-    <path d="M1042 70 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" fill="#ff9ecf" opacity=".9"/>
-    <path d="M980 240 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#7de8e0" opacity=".85"/>
-    <path d="M210 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#9ad34f" opacity=".8"/>
-    <path d="M598 46 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z" opacity=".8"/>
-    <circle cx="300" cy="60" r="2" opacity=".7"/>
-    <circle cx="900" cy="270" r="2" fill="#ff9ecf" opacity=".7"/>
-    <circle cx="760" cy="52" r="1.6" fill="#7de8e0" opacity=".8"/>
+    <path d="M150 84 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z">
+      <animate attributeName="opacity" values="1;.15;1" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1042 70 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" fill="#ff9ecf">
+      <animate attributeName="opacity" values=".2;1;.2" dur="1.8s" begin=".4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M980 240 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#7de8e0">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.6s" begin=".9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M210 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#9ad34f">
+      <animate attributeName="opacity" values=".25;1;.25" dur="2s" begin="1.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M598 46 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z">
+      <animate attributeName="opacity" values="1;.1;1" dur="1.5s" begin=".6s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="300" cy="60" r="2"><animate attributeName="opacity" values=".8;.1;.8" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="270" r="2" fill="#ff9ecf"><animate attributeName="opacity" values=".2;.9;.2" dur="2.4s" begin="1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="52" r="1.6" fill="#7de8e0"><animate attributeName="opacity" values="1;.15;1" dur="2.8s" begin=".2s" repeatCount="indefinite"/></circle>
+    <circle cx="86" cy="180" r="1.5" fill="#ffffff"><animate attributeName="opacity" values=".7;.1;.7" dur="2.1s" begin="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="1126" cy="180" r="1.5" fill="#ff9ecf"><animate attributeName="opacity" values=".15;.9;.15" dur="1.9s" begin=".7s" repeatCount="indefinite"/></circle>
   </g>
 
   <!-- title -->
-  <text x="600" y="188" text-anchor="middle"
-        font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900"
-        font-size="104" letter-spacing="10" fill="url(#chrome)"
-        stroke="#20204a" stroke-width="2">STARSCALE</text>
-  <!-- holo echo behind title -->
   <text x="600" y="192" text-anchor="middle"
         font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900"
         font-size="104" letter-spacing="10" fill="none"
         stroke="#ff9ecf" stroke-opacity=".35" stroke-width="1.5">STARSCALE</text>
+  <text x="600" y="188" text-anchor="middle"
+        font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900"
+        font-size="104" letter-spacing="10" fill="url(#chrome)"
+        stroke="#20204a" stroke-width="2">STARSCALE</text>
 
-  <!-- subtitle -->
+  <!-- subtitle (breathing) -->
   <text x="600" y="238" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="24" letter-spacing="10" fill="#7de8e0">AI × GPU IMAGE UPSCALER</text>
+        font-size="24" letter-spacing="10" fill="#7de8e0">AI × GPU IMAGE UPSCALER
+    <animate attributeName="opacity" values="1;.65;1" dur="3.5s" repeatCount="indefinite"/>
+  </text>
 
-  <!-- divider line + footer strip -->
+  <!-- divider line with a travelling glint -->
   <rect x="330" y="262" width="540" height="2" fill="url(#edge)"/>
+  <rect x="330" y="261" width="70" height="4" fill="#ffffff" opacity=".65">
+    <animate attributeName="x" values="330;800;330" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
   <text x="600" y="292" text-anchor="middle" font-family="'Courier New',monospace"
         font-size="17" letter-spacing="5" fill="#b8b8d8">✦ ONE FILE · NO INSTALL · WORKS OFFLINE ✦</text>
 </svg>

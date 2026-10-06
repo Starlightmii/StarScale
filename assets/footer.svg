@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="120" viewBox="0 0 880 120" role="img" aria-label="a shooting star arcs over the footer text">
+  <defs>
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="ffade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#7de8e0"/>
+      <stop offset="1" stop-color="#ff9ecf" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="150" y="52" width="580" height="2" fill="url(#ffade)"/>
+
+  <!-- shooting star: head + fading trail, arcs across -->
+  <g>
+    <g transform="rotate(-14)">
+      <rect x="-90" y="-1.5" width="90" height="3" fill="url(#trail)" rx="1.5"/>
+      <circle r="4" fill="#ffffff"/>
+      <circle r="7" fill="#ff9ecf" opacity=".35">
+        <animate attributeName="r" values="5;9;5" dur="1s" repeatCount="indefinite"/>
+      </circle>
+      <animateTransform attributeName="transform" type="translate" additive="sum"
+        values="60,86; 820,26" dur="3.2s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <text x="440" y="86" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="17" letter-spacing="4" fill="#b8b8d8">✦ STARLIGHTMII ✦</text>
+  <text x="440" y="110" text-anchor="middle" font-family="'Courier New',monospace"
+        font-size="13" letter-spacing="2" fill="#6f695b">made under the stars in jaipur — for blurry photos everywhere</text>
+</svg>

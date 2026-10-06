@@ -23,12 +23,7 @@ and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernel
 
 > ✧ the whole app — UI, GLSL shaders, the AI worker — is one file you can email to someone ✧
 
-```text
-      blurry jpg ──▶  ★ STARSCALE ★  ──▶  crisp 4× export
-                     ╱                ╲
-             AI neural engine      GPU resample engine
-           (ONNX Runtime Web)      (WebGL2 Lanczos3)
-```
+<img src="assets/flow.svg" alt="blurry.jpg → ★ STARSCALE ★ → crisp.png ×4" width="100%">
 
 ## ⚡ quick start
 
@@ -130,7 +125,7 @@ model weights keep their respective licenses — check each HF page before comme
 
 ```
 index.html      the entire app — UI, GLSL, worker (~4.6k lines)
-assets/         banner + divider SVGs
+assets/         animated SVGs — banner, flow, footer, divider, 88×31 badge
 README.md       you are here ✦
 LICENSE         MIT
 ```
@@ -139,10 +134,10 @@ LICENSE         MIT
 
 <img src="assets/divider.svg" width="100%">
 
-**✦ starlightmii ✦**
+<img src="assets/footer.svg" width="100%">
 
-*made under the stars in jaipur — for blurry photos everywhere*
+<img src="assets/8831.svg" width="176" alt="best viewed 1024+"> \<br>
 
-⭐ star the repo if it saved your pixels ⭐
+⭐ **star the repo if it saved your pixels** ⭐
 
 </div>
