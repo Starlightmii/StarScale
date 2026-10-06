@@ -42,6 +42,8 @@ python3 -m http.server 8000   # → http://localhost:8000
 
 Chrome menu → **Add to Home screen** = instant PWA. ✦
 
+<img src="assets/terminal.svg" width="100%" alt="a starscale run, as a terminal log">
+
 ## 🛰 two engines, one file
 
 | | ☆ GPU RESAMPLE | ★ AI NEURAL |
@@ -84,6 +86,10 @@ and recommends an engine/model. override it whenever you want.
 - **two themes** — dark *pro* studio / light *paper* print-shop
 
 <img src="assets/constellation.svg" width="100%" alt="constellation map of StarScale features">
+
+## 📡 transmission: equalizer + counter
+
+<img src="assets/equalizer.svg" width="100%" alt="holo equalizer and pixel counter">
 
 ## ✨ why it works from `file://`
 
@@ -143,6 +149,8 @@ LICENSE         MIT
 <img src="assets/footer.svg" width="100%">
 
 <img src="assets/8831.svg" width="176" alt="best viewed 1024+"> \<br>
+
+<img src="assets/buttons.svg" width="470" alt="retro button wall">
 
 ⭐ **star the repo if it saved your pixels** ⭐
 

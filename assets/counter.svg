@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="66" viewBox="0 0 880 64" role="img" aria-label="retro visitor counter reading 000042">
+  <defs>
+    <linearGradient id="lcd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2a1c"/>
+      <stop offset="1" stop-color="#0e160e"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="64" fill="#0a0a2e"/>
+
+  <text x="250" y="39" text-anchor="end" font-family="'Courier New',monospace" font-size="16" letter-spacing="3" fill="#6f695b">you are visitor</text>
+
+  <!-- odometer digits -->
+  <g font-family="'Courier New',monospace" font-weight="bold" font-size="26" fill="#9ad34f" text-anchor="middle">
+    <g>
+      <rect x="410" y="14" width="30" height="38" rx="4" fill="url(#lcd)" stroke="#2c4a2c" stroke-width="1"/>
+      <text x="424" y="41">0</text>
+      <rect x="444" y="14" width="28" height="38" rx="4" fill="url(#lcd)" stroke="#2c4a2c" stroke-width="1"/>
+      <text x="458" y="41">0</text>
+      <rect x="478" y="14" width="38" height="38" rx="4" fill="url(#lcd)" stroke="#2c4a2c" stroke-width="1"/>
+      <text x="488" y="41">0</text>
+      <rect x="512" y="14" width="38" height="38" rx="4" fill="url(#lcd)" stroke="#2c4a2c" stroke-width="1"/>
+      <text x="496" y="41">0</text>
+      <rect x="542" y="14" width="38" height="38" rx="4" fill="url(#lcd)" stroke="#2c4a2c" stroke-width="1"/>
+      <text x="526" y="41">4</text>
+      <!-- rolling last digit -->
+      <g>
+        <rect x="542" y="14" width="38" height="38" rx="4" fill="url(#lcd)" stroke="#2c4a2c" stroke-width="1"/>
+        <clipPath id="dig"><rect x="508" y="14" width="38" height="38" rx="4"/></clipPath>
+        <g clip-path="url(#dig)">
+          <text x="509" y="41" fill="#9ad34f">0<tspan x="509" dy="0">1</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

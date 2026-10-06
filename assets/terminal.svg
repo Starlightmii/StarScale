@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 240" role="img" aria-label="terminal log of a starscale run">
+  <defs>
+    <linearGradient id="tbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"/><stop offset="1" stop-color="#7de8e0"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="240" fill="#0a0a2e"/>
+  <rect x="15" y="12" width="850" height="216" rx="12" fill="#0d0b22" stroke="#3a3a6a" stroke-width="1.5"/>
+  <!-- title bar -->
+  <rect x="15" y="12" width="850" height="30" rx="12" fill="#141044"/>
+  <rect x="15" y="30" width="850" height="4" fill="#141044"/>
+  <circle cx="38" cy="27" r="5" fill="#ff6b6b"/><circle cx="56" cy="27" r="5" fill="#ffd166"/><circle cx="58" cy="27" r="5" fill="#7de8e0"/>
+  <text x="440" y="32" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" fill="#6f695b">starscale — zsh</text>
+
+  <g font-family="'Courier New',monospace" font-size="15" xml:space="preserve">
+    <!-- each line appears at its beat, whole log loops every 10s -->
+    <text x="35" y="70" fill="#ece4cf"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.04;.05;1" dur="10s" repeatCount="indefinite"/>$ <tspan fill="#7de8e0">starscale</tspan> blurry.jpg <tspan fill="#b8b8d8">--scale 4</tspan></text>
+    <text x="35" y="96" fill="#9ad34f"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;1.6;1.62;10" dur="10s" repeatCount="indefinite"/>▸ analyzing subject … <tspan fill="#b8b8d8">photo ✓</tspan></text>
+    <text x="35" y="122" fill="#9ad34f"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;2.8;2.82;3.99" dur="10s" repeatCount="indefinite"/>▸ noise 0.12 · blur 0.18 · jpeg artefacts <tspan fill="#b8b8d8">✓</tspan><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;2.8;2.82;10" dur="10s" repeatCount="indefinite"/></text>
+    <text x="35" y="148" fill="#9ad34f"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;4.0;4.02;10" dur="10s" repeatCount="indefinite"/>▸ engine <tspan fill="#ff9ecf">AI neural</tspan> · model <tspan fill="#7de8e0">purephoto-span</tspan> (1.6 MB)</text>
+    <text x="35" y="174" fill="#9ad34f"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;5.2;5.22;10" repeatCount="indefinite" dur="10s"/>▸ upscaling 4× …</text>
+    <text x="35" y="174" fill="#9ad34f"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;4.0;4.02;10" dur="10s" repeatCount="indefinite"/></text>
+    <!-- progress bar -->
+    <rect x="252" y="136" width="250" height="16" rx="4" fill="#1c1a15" stroke="#3a3a6a" stroke-width="1"/>
+    <rect x="255" y="139" width="0" height="10" rx="3" fill="url(#tbar)"><animate attributeName="width" values="0;0;244;244" keyTimes="0;0.56;0.92;1" dur="10s" repeatCount="indefinite"/></rect>
+    <text x="512" y="149" font-size="12" fill="#6f695b"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.9;0.92;10" dur="10s" repeatCount="indefinite"/>100%</text>
+    <text x="35" y="200" fill="#ff9ecf"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;8.6;8.62;10" dur="10s" repeatCount="indefinite"/>✓ <tspan fill="#ece4cf">crisp.png</tspan> · 1024×1024 · 2.4s — <tspan fill="#7de8e0">stars did the rest ✦</tspan></text>
+    <!-- blinking cursor -->
+    <rect x="52" y="206" width="9" height="14" fill="#7de8e0"><animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/></rect>
+  </g>
+</svg>
