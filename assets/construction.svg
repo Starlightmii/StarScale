@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="120" viewBox="0 0 880 120" role="img" aria-label="perpetually under construction — a star shoveling pixels">
+  <defs>
+    <pattern id="caution" width="28" height="16" patternUnits="userSpaceOnUse" patternTransform="skewX(-18)">
+      <rect width="14" height="16" fill="#ffd166"/><rect x="14" width="14" height="16" fill="#171321"/>
+      <animateTransform attributeName="patternTransform" type="translate" values="0,0;-28,0" dur="1.2s" repeatCount="indefinite" additive="sum"/>
+    </pattern>
+    <linearGradient id="cstrip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"/><stop offset="1" stop-color="#7de8e0"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="120" fill="#0a0a2e"/>
+  <rect x="0" y="0" width="880" height="14" fill="url(#caution)"/>
+  <rect x="0" y="106" width="880" height="14" fill="url(#caution)"/>
+
+  <!-- digging star: bobbing body + rotating shovel -->
+  <g>
+    <g transform="translate(300,52)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0;0,5;0,0" dur=".8s" repeatCount="indefinite"/>
+        <path d="M0 -16 l4.5 12 12 4.5 -12 4.5 -4.5 12 -4.5 -12 -12 -4.5 12 -4.5 z" fill="#ffd166" stroke="#b8860b" stroke-width="1"/>
+      </g>
+      <g transform="translate(16,2)">
+        <animateTransform attributeName="transform" type="rotate" values="-18;22;-18" dur=".8s" repeatCount="indefinite"/>
+        <line x1="0" y1="0" x2="26" y2="14" stroke="#b8860b" stroke-width="3"/>
+        <path d="M24 10 l12 8 -8 4 -8 -8 z" fill="#8a8aa0"/>
+      </g>
+    </g>
+    <!-- flying pixel blocks -->
+    <rect x="330" y="72" width="8" height="8" fill="#ff9ecf"><animate attributeName="y" values="72;52;72" dur=".8s" repeatCount="indefinite"/><animate attributeName="x" values="330;356;330" dur=".8s" repeatCount="indefinite"/></rect>
+    <rect x="344" y="76" width="6" height="6" fill="#7de8e0"><animate attributeName="y" values="76;60;76" dur=".65s" begin=".2s" repeatCount="indefinite"/><animate attributeName="x" values="344;368;344" dur=".65s" begin=".2s" repeatCount="indefinite"/></rect>
+    <rect x="338" y="74" width="5" height="5" fill="#9ad34f"><animate attributeName="y" values="74;58;74" dur=".9s" begin=".35s" repeatCount="indefinite"/><animate attributeName="x" values="338;352;338" dur=".9s" begin=".35s" repeatCount="indefinite"/></rect>
+    <!-- dirt mound -->
+    <path d="M300 84 q28 -14 56 0 z" fill="#2a2440"/>
+  </g>
+
+  <!-- warning lights flashing -->
+  <circle cx="470" cy="58" r="6" fill="#ff6b6b"><animate attributeName="opacity" values="1;.15;1" dur="1s" repeatCount="indefinite"/></circle>
+  <circle cx="700" cy="58" r="6" fill="#ffd166"><animate attributeName="opacity" values=".2;1;.2" dur="1s" repeatCount="indefinite"/></circle>
+
+  <text x="580" y="54" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="19" letter-spacing="2" fill="#ffd166">⚠ THIS README IS PERPETUALLY</text>
+  <text x="580" y="80" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="19" letter-spacing="2" fill="#ffd166">UNDER CONSTRUCTION ⚠</text>
+  <text x="580" y="76" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#6f695b">(since 2026 · forever · the stars are never done)</text>
+
+  <rect x="40" y="30" width="2" height="60" fill="url(#cstrip)" opacity=".4"/>
+  <rect x="838" y="30" width="2" height="60" fill="url(#cstrip)" opacity=".4"/>
+</svg>

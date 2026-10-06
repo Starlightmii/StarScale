@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="70" viewBox="0 0 880 70" role="img" aria-label="crisp-o-meter gauge that never stops">
+  <defs>
+    <linearGradient id="fillg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"><animate attributeName="stop-color" values="#ff9ecf;#7de8e0;#9ad34f;#ff9ecf" dur="6s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#7de8e0"><animate attributeName="stop-color" values="#7de8e0;#9ad34f;#ff9ecf;#7de8e0" dur="6s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="70" fill="#0a0a2e"/>
+  <text x="35" y="43" font-family="'Courier New',monospace" font-weight="bold" font-size="16" fill="#ece4cf">CRISP-O-METER™</text>
+  <rect x="215" y="24" width="560" height="22" rx="11" fill="#0d0b22" stroke="#3a3a6a" stroke-width="1.5"/>
+  <!-- fill: climbs, glitches back, climbs again — 100% every time -->
+  <rect x="218" y="27" width="0" height="16" rx="8" fill="url(#fillg)">
+    <animate attributeName="width" values="0;120;260;240;420;400;554;554" keyTimes="0;.22;.5;.54;.78;.82;1;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <!-- tick marks -->
+  <g stroke="#3a3a6a" stroke-width="1">
+    <line x1="355" y1="24" x2="355" y2="46"/><line x1="495" y1="24" x2="495" y2="46"/><line x1="635" y1="24" x2="635" y2="46"/>
+  </g>
+  <!-- percentage readout -->
+  <text x="795" y="41" font-family="'Courier New',monospace" font-weight="bold" font-size="16" fill="#9ad34f">
+    <animate attributeName="opacity" values="1;1" dur="7s" repeatCount="indefinite"/>MAX
+  </text>
+  <!-- floating ✓ -->
+  <text x="500" y="60" font-family="'Courier New',monospace" font-size="12" fill="#6f695b">
+    <animate attributeName="opacity" values="0;1;0" dur="7s" keyTimes="0;.85;1" repeatCount="indefinite"/>always ends at 100% · scientifically verified ✦
+  </text>
+</svg>

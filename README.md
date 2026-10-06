@@ -106,6 +106,8 @@ So StarScale fetches the ONNX Runtime source over HTTP (allowed), builds a
 Blob worker from an inlined worker string, and injects the runtime via
 `importScripts(blob)`. No server. No bundler. Verified in Chrome 151; Firefox works too.
 
+<img src="assets/wow.svg" width="100%" alt="before :(' → after ✦ wow">
+
 ## 🔒 privacy
 
 Images **never leave your device** — inference is local (WebGL / WebGPU / WASM).
@@ -133,6 +135,12 @@ Storage keys are namespaced `starscale.*` in IndexedDB/localStorage.
 
 model weights keep their respective licenses — check each HF page before commercial use.
 
+<img src="assets/spin-divider.svg" width="100%" alt="">
+
+<img src="assets/sparkline.svg" width="100%" alt="stars over time — projection: up">
+
+<img src="assets/crispometer.svg" width="100%" alt="the crisp-o-meter always reads MAX">
+
 ## 🗂 repo layout
 
 ```
@@ -145,6 +153,8 @@ LICENSE         MIT
 <div align="center">
 
 <img src="assets/divider.svg" width="100%">
+
+<img src="assets/construction.svg" width="100%" alt="perpetually under construction">
 
 <img src="assets/footer.svg" width="100%">
 

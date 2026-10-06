@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img" aria-label="a blurry blob resolving into a crisp star under a scanning loupe">
+  <defs>
+    <clipPath id="lens"><circle cx="440" cy="105" r="78"/></clipPath>
+    <radialGradient id="vign"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+    <linearGradient id="zg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"><animate attributeName="stop-color" values="#ff9ecf;#7de8e0;#9ad34f;#ff9ecf" dur="7s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#7de8e0"><animate attributeName="stop-color" values="#7de8e0;#9ad34f;#ff9ecf;#7de8e0" dur="7s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <rect width="880" height="240" fill="#0a0a2e"/>
+  <!-- frame -->
+  <rect x="14" y="14" width="852" height="212" rx="14" fill="#0d0b22" stroke="#3a3a6a" stroke-width="1.5"/>
+  <rect x="14" y="14" width="852" height="212" rx="14" fill="none" stroke="url(#zg)" stroke-width="1.5" stroke-dasharray="900" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" values="900;0" dur="2.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- stage 1: gaussian blob (blurry past) -->
+  <g opacity=".55" filter="url(#blur6)">
+    <circle cx="440" cy="105" r="46" fill="#ff9ecf"/>
+    <circle cx="424" cy="88" r="18" fill="#ffc4e2"/>
+    <circle cx="458" cy="122" r="20" fill="#e56ba4"/>
+  </g>
+
+  <!-- the star, resolving in sync with the loupe cycle -->
+  <g>
+    <animate attributeName="filter" values="url(#blur2);url(#blur2);none;none;url(#blur2)" keyTimes="0;.2;.55;.85;1" dur="6s" repeatCount="indefinite"/>
+    <path d="M440 35 l17 53 53 17 -53 17 -17 53 -17 -53 -53 -17 53 -17 z" fill="#ffd166" stroke="#b8860b" stroke-width="1.5"/>
+    <path d="M440 55 l10 30 30 10 -30 10 -10 30 -10 -30 -30 -10 30 -10 z" fill="#fff3c2" opacity=".9"/>
+    <!-- sparkle -->
+    <path d="M500 60 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#fff">
+      <animate attributeName="opacity" values="0;1;0" dur="6s" keyTimes="0;.6;.85" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- loupe ring + scanline sweeping vertically -->
+  <circle cx="440" cy="105" r="78" fill="none" stroke="url(#zg)" stroke-width="2.5"/>
+  <circle cx="440" cy="105" r="84" fill="none" stroke="#7de8e0" stroke-opacity=".25" stroke-width="1" stroke-dasharray="5 7">
+    <animateTransform attributeName="transform" type="rotate" from="0 440 105" to="360 440 105" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <g clip-path="url(#lens)">
+    <rect x="352" y="27" width="176" height="6" fill="#7de8e0" opacity=".45">
+      <animate attributeName="y" values="27;177;27" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <!-- lens handle -->
+  <line x1="496" y1="162" x2="540" y2="206" stroke="url(#zg)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- labels flip with the cycle -->
+  <g font-family="'Courier New',monospace" font-weight="bold" font-size="18">
+    <text x="180" y="110" text-anchor="middle" fill="#6f695b">before :(
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.2;.3;.9;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="700" y="110" text-anchor="middle" fill="#9ad34f">after ✦ wow
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.3;.42;.9;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <text x="440" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="3" fill="#b8b8d8">ONE CLICK · SIX SECONDS · ETERNAL CRISPNESS</text>
+</svg>
