@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" role="img" aria-label="the StarScale guestbook with three signed entries">
+  <rect width="880" height="250" fill="#0a0a2e"/>
+  <rect x="20" y="14" width="840" height="222" rx="12" fill="#0d0b22" stroke="#ff9ecf" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="440" y="46" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="20" letter-spacing="4" fill="#ff9ecf">📖 ✦ SIGN MY GUESTBOOK ✦ 📖</text>
+  <g font-family="'Courier New',monospace" font-size="15">
+    <text x="55" y="92" fill="#ece4cf"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.06;.1;1" dur="9s" repeatCount="indefinite"/>✦ <tspan fill="#7de8e0">starlightmii</tspan> · 2026-10-02 · <tspan fill="#6f695b">"first!!1 ★ the stars did the rest"</tspan></text>
+    <text x="55" y="124" fill="#ece4cf"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.2;.24;1" dur="9s" repeatCount="indefinite"/>✦ <tspan fill="#ff9ecf">qiqi</tspan> · 2026-10-02 · <tspan fill="#6f695b">"crisp photos make me happy (⁄ ⁄•⁄ω⁄•⁄ ⁄)"</tspan></text>
+    <text x="55" y="156" fill="#ece4cf"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.34;.38;1" dur="9s" repeatCount="indefinite"/>✦ <tspan fill="#9ad34f">anonymous</tspan> · 1998-13-32 · <tspan fill="#6f695b">"cool page. found via webring. bookmarked"</tspan></text>
+  </g>
+  <!-- sign button -->
+  <rect x="360" y="180" width="160" height="30" rx="15" fill="#141044" stroke="#7de8e0" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="440" y="200" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="14" fill="#7de8e0">✎ sign it ✎</text>
+  <text x="440" y="228" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#6f695b">guests served: ∞ · comments: 3 · spam: 0 (local-first guestbook ✦)</text>
+</svg>

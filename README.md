@@ -13,6 +13,8 @@
 
 </div>
 
+<img src="assets/webring.svg" width="100%" alt="starlight webring nav">
+
 <img src="assets/divider.svg" width="100%">
 
 ## ✦ what is this
@@ -108,6 +110,18 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <img src="assets/wow.svg" width="100%" alt="before :(' → after ✦ wow">
 
+## 🎺 retro annex
+
+<div align="center">
+
+<img src="assets/nowplaying.svg" width="100%" alt="now playing: stars did the rest (lanczos3 remix).mid">
+
+<img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
+
+<img src="assets/cursor.svg" width="100%" alt="cursor trail demo">
+
+</div>
+
 ## 🔒 privacy
 
 Images **never leave your device** — inference is local (WebGL / WebGPU / WASM).
@@ -137,6 +151,8 @@ model weights keep their respective licenses — check each HF page before comme
 
 <img src="assets/spin-divider.svg" width="100%" alt="">
 
+<img src="assets/cdrom.svg" width="100%" alt="spinning CD-ROMs">
+
 <img src="assets/sparkline.svg" width="100%" alt="stars over time — projection: up">
 
 <img src="assets/crispometer.svg" width="100%" alt="the crisp-o-meter always reads MAX">
@@ -145,7 +161,7 @@ model weights keep their respective licenses — check each HF page before comme
 
 ```
 index.html      the entire app — UI, GLSL, worker (~4.6k lines)
-assets/         animated SVGs — banner, flow, footer, divider, 88×31 badge
+assets/         24 animated SVGs — the README is a Y2K screensaver now
 README.md       you are here ✦
 LICENSE         MIT
 ```
@@ -153,6 +169,10 @@ LICENSE         MIT
 <div align="center">
 
 <img src="assets/divider.svg" width="100%">
+
+<img src="assets/starfield.svg" width="100%" alt="screensaver: press any key to continue staring">
+
+<img src="assets/award.svg" width="100%" alt="award winning page · certified hot">
 
 <img src="assets/construction.svg" width="100%" alt="perpetually under construction">
 

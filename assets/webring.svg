@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="62" viewBox="0 0 880 62" role="img" aria-label="retro webring navigation bar">
+  <defs>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"><animate attributeName="stop-color" values="#ff9ecf;#7de8e0;#9ad34f;#ff9ecf" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#7de8e0"><animate attributeName="stop-color" values="#7de8e0;#9ad34f;#ff9ecf;#7de8e0" dur="8s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="62" fill="#0a0a2e"/>
+  <rect x="10" y="8" width="860" height="46" rx="10" fill="#141044" stroke="url(#wg)" stroke-width="1.5"/>
+  <g font-family="'Courier New',monospace" font-weight="bold" font-size="15">
+    <text x="36" y="37" fill="#b8b8d8">◄◄</text>
+    <text x="90" y="37" fill="#ff9ecf">◄ prev</text>
+    <text x="200" y="37" fill="#b8b8d8">random</text>
+    <text x="330" y="37" fill="#ece4cf">✦ starlight webring ✦</text>
+    <text x="590" y="37" fill="#b8b8d8">list all</text>
+    <text x="705" y="37" fill="#7de8e0">next ►</text>
+    <text x="790" y="37" fill="#b8b8d8">►►</text>
+  </g>
+  <!-- travelling holo underline highlight -->
+  <rect x="16" y="48" width="848" height="2" fill="url(#wg)" opacity=".55"/>
+  <rect x="16" y="47" width="90" height="4" rx="2" fill="#ffffff" opacity=".5">
+    <animate attributeName="x" values="16;774;16" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>

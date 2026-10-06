@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="130" viewBox="0 0 880 130" role="img" aria-label="cursor trail demo with a hand cursor and fading star trail">
+  <rect width="880" height="130" fill="#0a0a2e"/>
+  <rect x="14" y="10" width="852" height="110" rx="10" fill="#0d0b22" stroke="#3a3a6a" stroke-width="1"/>
+  <text x="30" y="34" font-family="'Courier New',monospace" font-weight="bold" font-size="15" letter-spacing="2" fill="#b8b8d8">✦ CURSOR-TRAIL.exe</text>
+  <text x="850" y="34" text-anchor="end" font-family="'Courier New',monospace" font-size="12" fill="#6f695b">status: ENFORCED FUN</text>
+
+  <!-- trail stars spawn along the path, each fading on its own phase -->
+  <g fill="#ff9ecf">
+    <path d="M170 78 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="0s" repeatCount="indefinite"/></path>
+    <path d="M250 66 l4.5 11 11 4.5 -11 4.5 -4.5 11 -4.5 -11 -11 -4.5 11 -4.5 z" fill="#7de8e0"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin=".25s" repeatCount="indefinite"/></path>
+    <path d="M330 80 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#9ad34f"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin=".5s" repeatCount="indefinite"/></path>
+    <path d="M410 62 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z" fill="#ffd166"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin=".75s" repeatCount="indefinite"/></path>
+    <path d="M490 74 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5 z" fill="#ff9ecf"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1s" repeatCount="indefinite"/></path>
+    <path d="M570 64 l3.5 8 8 3.5 -8 3.5 -3.5 8 -3.5 -8 -8 -3.5 8 -3.5 z" fill="#7de8e0"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1.25s" repeatCount="indefinite"/></path>
+    <path d="M650 76 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#9ad34f"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1.5s" repeatCount="indefinite"/></path>
+    <path d="M720 66 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="#ffd166"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1.75s" repeatCount="indefinite"/></path>
+  </g>
+  <!-- hand cursor riding the wave -->
+  <g>
+    <animateMotion path="M150,90 Q300,40 450,80 T740,70" dur="3s" repeatCount="indefinite"/>
+    <text x="0" y="0" font-size="24">🖱️</text>
+  </g>
+  <text x="440" y="112" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="3" fill="#6f695b">every star you spawn is a pixel upscaled somewhere · probably ✦</text>
+</svg>

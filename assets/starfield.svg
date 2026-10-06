@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="320" viewBox="0 0 880 320" role="img" aria-label="starfield screensaver with a drifting STARSCALE chunk">
+  <defs>
+    <radialGradient id="neb1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ff9ecf" stop-opacity=".2"/><stop offset="1" stop-color="#ff9ecf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="neb2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7de8e0" stop-opacity=".16"/><stop offset="1" stop-color="#7de8e0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9ecf"><animate attributeName="stop-color" values="#ff9ecf;#7de8e0;#9ad34f;#ff9ecf" dur="10s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#7de8e0"><animate attributeName="stop-color" values="#7de8e0;#9ad34f;#ff9ecf;#7de8e0" dur="10s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="320" fill="#050514"/>
+  <ellipse cx="240" cy="110" rx="300" ry="180" fill="url(#neb1)"/>
+  <ellipse cx="660" cy="230" rx="320" ry="170" fill="url(#neb2)"/>
+
+  <!-- far layer: slow drift left -->
+  <g fill="#8f8fc0">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-880,0" dur="90s" repeatCount="indefinite"/>
+    <circle cx="40" cy="40" r="1"/><circle cx="190" cy="120" r="1"/><circle cx="330" cy="60" r="1"/><circle cx="470" cy="170" r="1"/><circle cx="610" cy="90" r="1"/><circle cx="760" cy="40" r="1"/><circle cx="120" cy="250" r="1"/><circle cx="420" cy="290" r="1"/><circle cx="700" cy="270" r="1"/><circle cx="850" cy="180" r="1"/><circle cx="60" cy="300" r="1"/><circle cx="540" cy="40" r="1"/>
+    <circle cx="920" cy="40" r="1"/><circle cx="1070" cy="120" r="1"/><circle cx="1210" cy="60" r="1"/><circle cx="1350" cy="170" r="1"/><circle cx="1490" cy="90" r="1"/><circle cx="1640" cy="40" r="1"/><circle cx="1000" cy="250" r="1"/><circle cx="1300" cy="290" r="1"/><circle cx="1580" cy="270" r="1"/><circle cx="1730" cy="180" r="1"/><circle cx="940" cy="300" r="1"/><circle cx="1420" cy="40" r="1"/>
+  </g>
+  <!-- mid layer -->
+  <g fill="#c9c9e8">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-880,0" dur="45s" repeatCount="indefinite"/>
+    <circle cx="90" cy="90" r="1.6"/><circle cx="260" cy="200" r="1.6"/><circle cx="410" cy="130" r="1.6"/><circle cx="560" cy="60" r="1.6"/><circle cx="720" cy="220" r="1.6"/><circle cx="820" cy="120" r="1.6"/><circle cx="180" cy="40" r="1.6"/><circle cx="500" cy="250" r="1.6"/>
+    <circle cx="970" cy="90" r="1.6"/><circle cx="1140" cy="200" r="1.6"/><circle cx="1290" cy="130" r="1.6"/><circle cx="1440" cy="60" r="1.6"/><circle cx="1600" cy="220" r="1.6"/><circle cx="1700" cy="120" r="1.6"/><circle cx="1060" cy="40" r="1.6"/><circle cx="1380" cy="250" r="1.6"/>
+  </g>
+  <!-- near layer: twinkle + fast drift -->
+  <g fill="#ffffff">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-880,0" dur="22s" repeatCount="indefinite"/>
+    <path d="M140 70 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></path>
+    <path d="M370 210 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#ff9ecf"><animate attributeName="opacity" values=".2;1;.2" dur="2.6s" repeatCount="indefinite"/></path>
+    <path d="M640 100 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#7de8e0"><animate attributeName="opacity" values="1;.25;1" dur="3.1s" repeatCount="indefinite"/></path>
+    <path d="M790 250 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z"><animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/></path>
+    <path d="M1020 70 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></path>
+    <path d="M1250 210 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#ff9ecf"><animate attributeName="opacity" values=".2;1;.2" dur="2.6s" repeatCount="indefinite"/></path>
+    <path d="M1520 100 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#7de8e0"><animate attributeName="opacity" values="1;.25;1" dur="3.1s" repeatCount="indefinite"/></path>
+    <path d="M1670 250 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z"><animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/></path>
+  </g>
+
+  <!-- drifting headline chunk, bounces off edges -->
+  <g>
+    <animateMotion path="M0,0; 240,90; 420,60; 240,90; 0,0" dur="26s" repeatCount="indefinite"/>
+    <g opacity=".92">
+      <rect x="40" y="30" width="330" height="64" rx="12" fill="#141044" stroke="url(#titleg)" stroke-width="1.5"/>
+      <text x="205" y="72" text-anchor="middle" font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900" font-size="30" letter-spacing="4" fill="url(#titleg)">STARSCALE</text>
+      <text x="205" y="112" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#6f695b">press any key to continue staring</text>
+    </g>
+  </g>
+</svg>
