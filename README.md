@@ -1,6 +1,5 @@
 
 
-https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572
 
 <div align="center">
 
@@ -120,7 +119,7 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <img src="assets/nowplaying.svg" width="100%" alt="now playing: We Don't Talk Anymore — Charlie Puth ft. Selena Gomez">
 
-<!-- ▶ PLAYER SLOT: drag We-Dont-Talk-Anymore-charlie-puth.mp4 into the editor right below the now-playing banner — GitHub uploads it to user-attachments and inserts a bare URL that renders as a native player -->
+https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572
 
 <img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
 
