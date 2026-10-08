@@ -116,7 +116,7 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <img src="assets/nowplaying.svg" width="100%" alt="now playing: We Don't Talk Anymore — Charlie Puth ft. Selena Gomez">
 
-<video src="https://raw.githubusercontent.com/Starlightmii/StarScale/main/assets/soundtrack.mp4" controls preload="metadata" width="100%" style="max-width:560px;border-radius:8px;border:1px solid #3a3a6a"></video>
+<!-- ▶ PLAYER SLOT: drag We-Dont-Talk-Anymore-charlie-puth.mp4 into the editor right below the now-playing banner — GitHub uploads it to user-attachments and inserts a bare URL that renders as a native player -->
 
 <img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
 
