@@ -10,7 +10,7 @@
      offline — the theme survives either way. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cardo:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=IM+Fell+English:ital@0;1&family=Cardo:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap">
 <!--
   ============================================================================
   STARSCALE — a single-file image workspace.
@@ -76,9 +76,11 @@
 -->
 <style>
 /* ==========================================================================
-   DESIGN SYSTEM — two themes on one set of variables.
-   "pro"   : dark charcoal, warm ivory text, one muted olive accent.
-             Professional imaging software. The default.
+   DESIGN SYSTEM — three themes on one set of variables.
+   "pro"   : deep-space charcoal, aurora violet->cyan accents, glass chrome,
+             film grain. Modern AI-tool look. The default.
+   "claude": Anthropic house style — warm cream, terracotta accent, Fraunces
+             serif display type with italic word-accents.
    "paper" : the original print-shop skin — torn paper, old type, mono ink.
    ========================================================================== */
 :root{
@@ -87,17 +89,17 @@
 }
 body[data-theme=pro]{
   color-scheme:dark;
-  --bg:#0f0e0c; --bg2:#16140f; --panel:#1c1a15; --panel2:#24211a; --panel3:#2b271e;
-  --tx:#ece4cf; --tx2:#a89e87; --tx3:#6f695b;
-  --line:#2c2822; --line2:#423c31;
-  --acc:#9cba63; --acc2:#7d9a45; --acc-ink:#5d7831; --on-acc:#161a0e;
-  --ok:#8fb56a; --warn:#d3a24a; --err:#d0684f;
-  --sh:0 10px 28px rgba(0,0,0,.5);
+  --bg:#0a0c10; --bg2:#0f1218; --panel:#151a23; --panel2:#1b212d; --panel3:#232a38;
+  --tx:#eef1f7; --tx2:#a3adc2; --tx3:#667089;
+  --line:#242c3b; --line2:#37415a;
+  --acc:#7d6bff; --acc2:#5f4de0; --acc-ink:#4c3cb8; --on-acc:#0b0718;
+  --ok:#5dd39e; --warn:#f0b45a; --err:#f26d5f;
+  --sh:0 12px 32px rgba(0,0,0,.55);
   --fu:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --fd:"IM Fell English","EB Garamond",Garamond,serif;
   --fm:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
-  --paper:#1c1a15; --paper-2:#24211a; --paper-3:#16140f;
-  --ink:#ece4cf; --ink-soft:#a89e87; --ink-faint:#6f695b;
+  --paper:#151a23; --paper-2:#1b212d; --paper-3:#0f1218;
+  --ink:#eef1f7; --ink-soft:#a3adc2; --ink-faint:#667089;
   --serif:var(--fu); --body:var(--fu); --mono:var(--fm);
 }
 body[data-theme=paper]{
@@ -115,6 +117,23 @@ body[data-theme=paper]{
   --ink:#221c13; --ink-soft:rgba(34,28,19,.64); --ink-faint:rgba(34,28,19,.40);
   --serif:var(--fd); --body:var(--fu); --mono:var(--fm);
 }
+/* "claude" — Anthropic house style: warm cream, terracotta,
+   Fraunces serif display, italic accents, restrained glass */
+body[data-theme=claude]{
+  color-scheme:light;
+  --bg:#f4f1ea; --bg2:#ede9de; --panel:#fbfaf5; --panel2:#f4f0e6; --panel3:#eae4d4;
+  --tx:#2a2520; --tx2:rgba(42,37,32,.66); --tx3:rgba(42,37,32,.42);
+  --line:rgba(42,37,32,.13); --line2:rgba(42,37,32,.24);
+  --acc:#d97757; --acc2:#c06344; --acc-ink:#a9502f; --on-acc:#fff9f3;
+  --ok:#4e7a5a; --warn:#9a7a2e; --err:#c04b33;
+  --sh:0 10px 28px rgba(42,37,32,.10);
+  --fu:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --fd:Fraunces,Georgia,"Times New Roman",serif;
+  --fm:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+  --paper:#fbfaf5; --paper-2:#f4f0e6; --paper-3:#ede9de;
+  --ink:#2a2520; --ink-soft:rgba(42,37,32,.66); --ink-faint:rgba(42,37,32,.42);
+  --serif:var(--fd); --body:var(--fu); --mono:var(--fm);
+}
 @media (prefers-color-scheme:dark){
   body[data-theme=paper]{color-scheme:dark;
     --bg:#16120d; --bg2:#1c1915; --panel:#211d17; --panel2:#2a251d; --panel3:#332c22;
@@ -125,6 +144,17 @@ body[data-theme=paper]{
     --sh:0 12px 32px rgba(0,0,0,.55);
     --paper:#211d17; --paper-2:#2a251d; --paper-3:#16120d;
     --ink:#e9ddc6; --ink-soft:rgba(233,221,198,.66); --ink-faint:rgba(233,221,198,.40);}
+}
+@media (prefers-color-scheme:dark){
+  body[data-theme=claude]{color-scheme:dark;
+    --bg:#1b1815; --bg2:#221f1b; --panel:#28241f; --panel2:#302b25; --panel3:#3a342c;
+    --tx:#f0eadd; --tx2:rgba(240,234,221,.66); --tx3:rgba(240,234,221,.42);
+    --line:rgba(240,234,221,.14); --line2:rgba(240,234,221,.26);
+    --acc:#e08a6b; --acc2:#ea9a7c; --acc-ink:#ea9a7c; --on-acc:#2a1710;
+    --ok:#84b490; --warn:#dbb760; --err:#e07b62;
+    --sh:0 12px 32px rgba(0,0,0,.5);
+    --paper:#28241f; --paper-2:#302b25; --paper-3:#221f1b;
+    --ink:#f0eadd; --ink-soft:rgba(240,234,221,.66); --ink-faint:rgba(240,234,221,.42);}
 }
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
@@ -146,6 +176,98 @@ button{cursor:pointer}
 body[data-theme=paper]::before{content:"";position:fixed;inset:0;z-index:260;pointer-events:none;
   background-image:var(--grain);background-size:180px 180px;
   mix-blend-mode:multiply;opacity:.05}
+/* pro: faint film grain over everything, like a modern dark UI */
+body[data-theme=pro]::before{content:"";position:fixed;inset:0;z-index:260;pointer-events:none;
+  background-image:var(--grain);background-size:180px 180px;
+  mix-blend-mode:overlay;opacity:.03}
+
+/* ====================== PRO — modern "aurora" polish ======================
+   Layered on top of the variables above: ambient glow, glass chrome,
+   gradient accents. Paper keeps its vintage print-shop skin. */
+body[data-theme=pro]{
+  background:
+    radial-gradient(1000px 520px at 6% -12%, color-mix(in srgb,var(--acc) 13%,transparent), transparent 62%),
+    radial-gradient(900px 520px at 104% 112%, color-mix(in srgb,#45d0f5 9%,transparent), transparent 62%),
+    radial-gradient(700px 500px at 85% -8%, color-mix(in srgb,#45d0f5 6%,transparent), transparent 60%),
+    var(--bg);
+}
+body[data-theme=pro] .workspace,body[data-theme=pro] .stage{background:transparent}
+body[data-theme=pro] #infobar{background:color-mix(in srgb,var(--bg) 72%,transparent)}
+body[data-theme=pro] #topbar{background:color-mix(in srgb,var(--bg2) 80%,transparent);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+body[data-theme=pro] #rail,body[data-theme=pro] #inspector,
+body[data-theme=pro] #queuebar{background:color-mix(in srgb,var(--bg2) 86%,transparent)}
+body[data-theme=pro] .brand .dot{background:conic-gradient(from 210deg,var(--acc),#45d0f5,var(--acc));
+  box-shadow:0 0 14px color-mix(in srgb,var(--acc) 55%,transparent)}
+body[data-theme=pro] .tbtn.pri{background:color-mix(in srgb,var(--acc) 12%,transparent)}
+body[data-theme=pro] .btn{transition:background .12s,border-color .12s,transform .12s,box-shadow .12s}
+body[data-theme=pro] .btn.pri{background:linear-gradient(135deg,var(--acc) 0%,#45a8f5 130%);
+  border-color:transparent;color:#fff;
+  box-shadow:0 4px 18px color-mix(in srgb,var(--acc) 38%,transparent)}
+body[data-theme=pro] .btn.pri:hover:not(:disabled){filter:brightness(1.12);
+  transform:translateY(-1px);box-shadow:0 6px 22px color-mix(in srgb,var(--acc) 50%,transparent)}
+body[data-theme=pro] .btn:not(.pri):hover:not(:disabled){transform:translateY(-1px)}
+body[data-theme=pro] .tab[aria-selected="true"]{
+  text-shadow:0 0 14px color-mix(in srgb,var(--acc) 60%,transparent)}
+body[data-theme=pro] .chip.acc{box-shadow:0 0 12px color-mix(in srgb,var(--acc) 18%,transparent)}
+body[data-theme=pro] .pchip.on,body[data-theme=pro] .scl button.on,
+body[data-theme=pro] .seg button[aria-pressed=true]{
+  background:linear-gradient(135deg,var(--acc) 0%,#45a8f5 130%);border-color:transparent;color:#fff;
+  box-shadow:0 2px 10px color-mix(in srgb,var(--acc) 35%,transparent)}
+body[data-theme=pro] .mcard{transition:border-color .15s,transform .15s,box-shadow .15s}
+body[data-theme=pro] .mcard:hover{transform:translateY(-1px);
+  box-shadow:0 6px 18px rgba(0,0,0,.35)}
+body[data-theme=pro] .mcard.on{box-shadow:0 0 0 1px var(--acc),
+  0 0 24px color-mix(in srgb,var(--acc) 28%,transparent)}
+body[data-theme=pro] .qi{transition:border-color .15s,transform .15s}
+body[data-theme=pro] .qi:hover{transform:translateY(-1px)}
+body[data-theme=pro] .qi[data-st="run"] .bar{background:linear-gradient(90deg,var(--acc),#45a8f5)}
+body[data-theme=pro] input[type=range]::-webkit-slider-thumb{
+  background:linear-gradient(135deg,var(--acc),#45a8f5);
+  box-shadow:0 0 10px color-mix(in srgb,var(--acc) 55%,transparent)}
+body[data-theme=pro] input[type=range]::-moz-range-thumb{
+  background:linear-gradient(135deg,var(--acc),#45a8f5)}
+body[data-theme=pro] #split{background:linear-gradient(180deg,var(--acc),#45a8f5);
+  box-shadow:0 0 10px color-mix(in srgb,var(--acc) 45%,transparent)}
+body[data-theme=pro] #split::after{box-shadow:0 2px 14px rgba(0,0,0,.5),
+  0 0 16px color-mix(in srgb,var(--acc) 40%,transparent)}
+body[data-theme=pro] .sName{background:linear-gradient(100deg,#fff 15%,#c9beff 55%,#45d0f5 95%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+body[data-theme=pro] .sMark{filter:drop-shadow(0 0 16px color-mix(in srgb,var(--acc) 60%,transparent))}
+body[data-theme=pro] .sMark svg{animation:twinkle 3.2s ease-in-out infinite}
+@keyframes twinkle{50%{opacity:.7;transform:scale(1.05)}}
+body[data-theme=pro] .rec{box-shadow:0 0 24px color-mix(in srgb,var(--acc) 14%,transparent)}
+body[data-theme=pro] #stageState{border-radius:99px}
+body[data-theme=pro] #zoombar,body[data-theme=pro] #meta{border-radius:12px}
+body[data-theme=pro] .toast{border-radius:var(--r)}
+body[data-theme=pro] .fth{transition:border-color .15s,transform .15s}
+body[data-theme=pro] .fth:hover{transform:translateY(-1px)}
+body[data-theme=pro] #drop.hot{box-shadow:0 0 20px color-mix(in srgb,var(--acc) 25%,transparent)}
+body[data-theme=pro] #cropRect{box-shadow:0 0 0 9999px rgba(4,6,10,.55),
+  0 0 20px color-mix(in srgb,var(--acc) 35%,transparent)}
+/* claude theme decorations — warm mesh, frosted chrome,
+   italic serif section titles (Anthropic house style) */
+body[data-theme=claude]{
+  background:
+    radial-gradient(900px 480px at 8% -10%, rgba(217,119,87,.08), transparent 60%),
+    radial-gradient(800px 480px at 104% 108%, rgba(217,119,87,.06), transparent 60%),
+    radial-gradient(600px 400px at 90% -6%, rgba(120,90,60,.05), transparent 60%),
+    var(--bg);
+}
+body[data-theme=claude] .workspace,body[data-theme=claude] .stage{background:transparent}
+body[data-theme=claude] #infobar{background:color-mix(in srgb,var(--bg) 72%,transparent)}
+body[data-theme=claude] #topbar{background:color-mix(in srgb,var(--bg2) 80%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+body[data-theme=claude] #rail,body[data-theme=claude] #inspector,
+body[data-theme=claude] #queuebar{background:color-mix(in srgb,var(--bg2) 86%,transparent)}
+body[data-theme=claude] .ptitle{font:italic 500 13.5px/1 var(--fd);
+  letter-spacing:0;text-transform:none;color:var(--tx2)}
+body[data-theme=claude] .brand .dot{border-radius:50%;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 22%,transparent)}
+body[data-theme=claude] .btn.pri{box-shadow:0 3px 12px color-mix(in srgb,var(--acc) 30%,transparent)}
+body[data-theme=claude] .card{border-radius:12px}
+body[data-theme=claude] .sMark{color:var(--acc)}
+/* ====================== /PRO polish ====================== */
 
 /* ================================ shell ================================= */
 body{display:grid;grid-template-rows:48px minmax(0,1fr) auto;height:100%}
@@ -365,6 +487,22 @@ input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;bac
 .kv span{color:var(--tx2)} .kv b{color:var(--tx);font-weight:500}
 .kv b.ok{color:var(--ok)} .kv b.warn{color:var(--warn)}
 
+/* bento output summary — modular stat tiles; the inspector
+   sidebar is ~320px, so two columns with the featured
+   Output tile spanning both */
+.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:8px}
+.bcell{position:relative;border:1px solid var(--line2);background:var(--panel);
+  border-radius:var(--r-sm);padding:9px 11px;display:flex;flex-direction:column;
+  gap:4px;min-width:0;transition:transform .15s,box-shadow .15s,border-color .15s}
+.bcell span{font:600 9.5px/1 var(--fu);letter-spacing:1.1px;text-transform:uppercase;color:var(--tx3)}
+.bcell b{font:500 12.5px/1.3 var(--fm);color:var(--tx);overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
+.bcell b.ok{color:var(--ok)} .bcell b.warn{color:var(--warn)}
+.bcell.feat{grid-column:span 2;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 9%,var(--panel)),var(--panel))}
+.bcell.feat b{font-size:14.5px}
+.bcell:hover{transform:translateY(-2px);box-shadow:var(--sh);border-color:var(--tx3)}
+
 /* badge — engine stamp next to the logo */
 .badge{display:none;align-items:center;gap:6px;padding:4px 9px;
   font:600 10px/1 var(--fm);letter-spacing:.8px;text-transform:uppercase;
@@ -472,6 +610,13 @@ input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;bac
 .qi[data-st="done"] .bar{background:var(--ok);width:100%!important}
 .qi[data-st="err"] .bar{background:var(--err);width:100%!important}
 .qi[data-st="pause"] .bar{background:var(--warn)}
+/* skeleton shimmer sweep while an item processes */
+.qi[data-st="run"]::after{content:"";position:absolute;inset:0;border-radius:inherit;
+  pointer-events:none;overflow:hidden;
+  background:linear-gradient(100deg,transparent 32%,
+    color-mix(in srgb,var(--tx) 8%,transparent) 50%,transparent 68%);
+  background-size:200% 100%;animation:shimmer 1.5s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
 #drop{border:1.5px dashed var(--line2);border-radius:var(--r-sm);padding:13px 12px;text-align:center;
   color:var(--tx2);transition:.15s;background:var(--panel);cursor:pointer;font-size:12.5px}
 #drop b{font:600 13px/1.3 var(--fu)}
@@ -671,7 +816,7 @@ body[data-theme=paper] #topbar::after{content:"";position:absolute;left:0;right:
 
       <div class="view" data-view="side">
         <div class="clip" id="clipS1" style="left:0;top:0;bottom:0;width:calc(50% - 1px)"><canvas id="cvS1"></canvas></div>
-        <div class="clip" id="clipS2" style="left:calc(50% + 1px);top:0;right:0"><canvas id="cvS2"></canvas></div>
+        <div class="clip" id="clipS2" style="left:calc(50% + 1px);top:0;bottom:0;right:0"><canvas id="cvS2"></canvas></div>
         <div class="splitLbl" style="left:10px">Before</div>
         <div class="splitLbl" style="right:10px">After</div>
       </div>
@@ -785,12 +930,12 @@ body[data-theme=paper] #topbar::after{content:"";position:absolute;left:0;right:
 
       <div class="card">
         <div class="ptitle">Output</div>
-        <div style="margin-top:8px">
-          <div class="kv"><span>Input</span><b id="outIn">—</b></div>
-          <div class="kv"><span>Output</span><b id="outDims">—</b></div>
-          <div class="kv"><span>Megapixels</span><b id="outMP">—</b></div>
-          <div class="kv"><span>Est. memory</span><b id="outEst">—</b></div>
-          <div class="kv"><span>Status</span><b id="outStatus">—</b></div>
+        <div class="bento">
+          <div class="bcell"><span>Input</span><b id="outIn">—</b></div>
+          <div class="bcell feat"><span>Output</span><b id="outDims">—</b></div>
+          <div class="bcell"><span>Megapixels</span><b id="outMP">—</b></div>
+          <div class="bcell"><span>Est. memory</span><b id="outEst">—</b></div>
+          <div class="bcell"><span>Status</span><b id="outStatus">—</b></div>
         </div>
       </div>
 
@@ -1003,7 +1148,7 @@ body[data-theme=paper] #topbar::after{content:"";position:absolute;left:0;right:
       <div class="card">
         <div class="ptitle">Settings</div>
         <div class="trow"><div class="tl"><b>Theme</b></div>
-          <span class="seg" id="setTheme"><button data-v="pro" aria-pressed="true">Pro</button><button data-v="paper" aria-pressed="false">Paper</button><button data-v="system" aria-pressed="false">System</button></span></div>
+          <span class="seg" id="setTheme"><button data-v="pro" aria-pressed="true">Pro</button><button data-v="claude" aria-pressed="false">Claude</button><button data-v="paper" aria-pressed="false">Paper</button><button data-v="system" aria-pressed="false">System</button></span></div>
         <div class="trow"><div class="tl"><b>Preview quality</b><small>canvas resampling while panning</small></div>
           <span class="seg" id="setPrevQ"><button data-v="fast">Fast</button><button data-v="balanced" aria-pressed="true">Balanced</button><button data-v="best">Best</button></span></div>
         <div class="trow"><div class="tl"><b>Auto analyze</b><small>classify images on import</small></div>
@@ -1024,6 +1169,13 @@ body[data-theme=paper] #topbar::after{content:"";position:absolute;left:0;right:
           <div class="kv"><span>Last run</span><b id="pfTime">—</b></div>
         </div>
         <p class="hint" style="margin-top:8px">All values are measured live; nothing here is simulated.</p>
+      </div>
+      <div class="card">
+        <div class="ptitle">About</div>
+        <p style="font-size:13px;line-height:1.65;margin:6px 0 0"><b>StarScale</b> — a single-file
+        AI &amp; GPU image upscaler.<br>
+        <span style="color:var(--tx2)">WebGL2 classic engines · ONNX models in a Web Worker ·
+        every feature real, nothing simulated.<br>Crafted by <b>starlight</b>.</span></p>
       </div>
     </div>
   </aside>
@@ -1630,6 +1782,10 @@ async function runBand(src, w, h, y0, y1, tileIn, pad, report) {
     try {
       for (let ty = y0; ty < y1; ty++) {
         for (let tx = 0; tx < nx; tx++) {
+          /* Hop the event loop so queued messages (notably "abort")
+             are actually delivered between tiles; awaiting the tile
+             alone only schedules microtasks, which starve the loop. */
+          await new Promise(r => setTimeout(r, 0));
           if (_abort) throw abortErr();
           const r = await runTile(ort, src, w, h, tx, ty, C, T, pad);
           if (!scale) {
@@ -2382,7 +2538,8 @@ function populateIeModel() {
 const UNDO = { stack: [], redo: [] };
 function snapItem(it, label) {
   if (!it) return;
-  UNDO.stack.push({ id: it.id, label: label, bitmap: it.bitmap, w: it.w, h: it.h, faces: it.faces });
+  UNDO.stack.push({ id: it.id, label: label, bitmap: it.bitmap, w: it.w, h: it.h,
+    rot: it.rot || 0, flipH: !!it.flipH, flipV: !!it.flipV, faces: it.faces });
   if (UNDO.stack.length > 20) {
     const s = UNDO.stack.shift();
     try { if (s.bitmap && s.bitmap.close && s.bitmap !== it.bitmap) s.bitmap.close(); } catch (_) {}
@@ -2412,6 +2569,7 @@ function restoreSnap(s) {
   const it = S.items.find(x => x.id === s.id);
   if (!it) return false;
   it.bitmap = s.bitmap; it.w = s.w; it.h = s.h; it.faces = s.faces;
+  it.rot = s.rot || 0; it.flipH = !!s.flipH; it.flipV = !!s.flipV;
   it.out = null; it.outRaw = null; it.st = 'idle';
   S.cur = S.items.indexOf(it);
   renderQueue(); showCurrent(); updateOutputEst();
@@ -2421,7 +2579,8 @@ function undo() {
   const s = UNDO.stack.pop(); if (!s) return;
   const it = S.items.find(x => x.id === s.id);
   if (!it) { syncUndo(); return; }
-  UNDO.redo.push({ id: it.id, label: s.label, bitmap: it.bitmap, w: it.w, h: it.h, faces: it.faces });
+  UNDO.redo.push({ id: it.id, label: s.label, bitmap: it.bitmap, w: it.w, h: it.h,
+    rot: it.rot || 0, flipH: !!it.flipH, flipV: !!it.flipV, faces: it.faces });
   if (!restoreSnap(s)) { UNDO.redo.pop(); syncUndo(); return; }
   toast('Undid ' + s.label + '.', 'ok', 1500);
   syncUndo();
@@ -2430,7 +2589,8 @@ function redo() {
   const s = UNDO.redo.pop(); if (!s) return;
   const it = S.items.find(x => x.id === s.id);
   if (!it) { syncUndo(); return; }
-  UNDO.stack.push({ id: it.id, label: s.label, bitmap: it.bitmap, w: it.w, h: it.h, faces: it.faces });
+  UNDO.stack.push({ id: it.id, label: s.label, bitmap: it.bitmap, w: it.w, h: it.h,
+    rot: it.rot || 0, flipH: !!it.flipH, flipV: !!it.flipV, faces: it.faces });
   if (!restoreSnap(s)) { UNDO.stack.pop(); syncUndo(); return; }
   toast('Redid ' + s.label + '.', 'ok', 1500);
   syncUndo();
@@ -3017,7 +3177,20 @@ function applyView() {
   if (!cw || !ch) return;
 
   if (S.zoom === 'fit') {
-    S.fitZoom = Math.max(0.01, Math.min(cw / w, ch / h) * 0.94);
+    if (S.view === 'side') {
+      /* Each pane is half the stage. Fit the LARGER canvas (the
+         result) into its half, so source and result share one zoom
+         and both stay fully visible — a true side-by-side. */
+      let zf = Infinity;
+      viewBoxes().forEach(pair => {
+        const box = pair[0], c = pair[1];
+        if (!box || !c || !c.width) return;
+        zf = Math.min(zf, box.clientWidth / c.width, box.clientHeight / c.height);
+      });
+      S.fitZoom = Math.max(0.01, (zf === Infinity ? 1 : zf) * 0.94);
+    } else {
+      S.fitZoom = Math.max(0.01, Math.min(cw / w, ch / h) * 0.94);
+    }
   }
   const z = S.zoom === 'fit' ? S.fitZoom : S.zoom;
   const splitX = Math.round(clamp(S.split, 0, 1) * cw);
@@ -3261,6 +3434,8 @@ function bindUI() {
 
   const pick = $('#filePick');
   $('#btnImport').onclick = () => pick.click();
+  $('#btnUndo').onclick = undo;
+  $('#btnRedo').onclick = redo;
   $('#drop').onclick = () => pick.click();
   $('#drop').onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick.click(); } };
   pick.onchange = e => { addFiles(e.target.files); e.target.value = ''; };
@@ -3325,8 +3500,10 @@ function bindUI() {
   };
 
   $('#btnHelp').onclick = () => {
+    $('#ovTitle').textContent = 'StarScale — Help';
     $('#ovBody').innerHTML =
-      '<p>Everything here is one HTML file. The GPU engines use WebGL2; the AI engine uses ' +
+      '<p><b>StarScale</b> is a single-file AI &amp; GPU image upscaler, crafted by <b>starlight</b>. ' +
+      'The GPU engines use WebGL2; the AI engine uses ' +
       'ONNX Runtime Web inside a Web Worker, so the page never freezes and Cancel always works.</p>' +
       (IS_FILE
         ? '<p><b style="color:var(--warn)">Opened from <code>file://</code>.</b> The AI engine still ' +
@@ -3335,10 +3512,11 @@ function bindUI() {
           'resolves to <code>file://</code> — a browser security rule, not a limitation of this app.</p>'
         : '<p>Opened over HTTP.</p>') +
       '<ul style="color:var(--ink-soft);font-size:13px;line-height:1.6;padding-left:18px">' +
-      '<li>Drop images on the stage, click the drop zone, or paste with Ctrl+V.</li>' +
+      '<li>Drop images on the stage, press Ctrl+O, click Import, or paste with Ctrl+V.</li>' +
       '<li>Scroll to zoom, drag to pan, double-click to zoom in, or use Fit / 1:1.</li>' +
       '<li><b>Compare</b> has a draggable divider. <b>Difference</b> exaggerates the change so you can ' +
       'see exactly what the engine did.</li>' +
+      '<li>Ctrl+Z undoes a destructive edit (crop, rotate, flip); Ctrl+Y redoes it.</li>' +
       '<li>The AI model is a fixed 192&times;192-input, 4&times;-output graph, so large images are tiled ' +
       'with overlap and stitched; expect it to take a while.</li>' +
       '<li>Ctrl/Cmd+Enter runs the batch.</li></ul>';
@@ -3779,6 +3957,9 @@ function onGradeInput() {
 function palActions() {
   const A = [];
   const add = (label, hint, fn, key) => A.push({ label, hint, fn, key });
+  add('Import images…', 'Ctrl+O', () => $('#filePick').click());
+  add('Undo last change', 'Ctrl+Z', () => undo());
+  add('Redo change', 'Ctrl+Y', () => redo());
   add('Upscale / Run batch', 'Ctrl+Enter', () => runAll());
   add('Cancel processing', '', () => $('#btnCancel').click());
   PRESETS.forEach(p => add('Preset: ' + p.label, p.hint, () => applyPreset(p.id)));
@@ -3827,6 +4008,16 @@ function palFilter(q, keepSel) {
 
 /* ---- history ------------------------------------------------------------------ */
 const HIST_KEY = 'starscale.history.v1';
+
+/* migrate legacy storage keys (pre-StarScale) once, then drop them */
+try {
+  for (const pair of [['imageup.settings.v1', SET_KEY], ['imageup.history.v1', HIST_KEY]]) {
+    if (!localStorage.getItem(pair[1])) {
+      const old = localStorage.getItem(pair[0]);
+      if (old) { localStorage.setItem(pair[1], old); localStorage.removeItem(pair[0]); }
+    }
+  }
+} catch (e) {}
 function histLoad() { try { return JSON.parse(localStorage.getItem(HIST_KEY) || '[]'); } catch (e) { return []; } }
 function histSave(h) { try { localStorage.setItem(HIST_KEY, JSON.stringify(h.slice(0, 30))); } catch (e) {} }
 function pushHist(it) {
@@ -4694,6 +4885,18 @@ function bootUI2() {
       }
     } catch (e) { /* unsupported: stay silent */ }
   })();
+
+  /* splash intro — brief, dismissible, skipped for reduced motion */
+  (function () {
+    const sp = $('#splash');
+    if (!sp) return;
+    const kill = () => { sp.classList.add('gone'); setTimeout(() => sp.remove(), 650); };
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { kill(); return; }
+    const t = setTimeout(kill, 1500);
+    const once = () => { clearTimeout(t); kill(); };
+    addEventListener('pointerdown', once, { once: true, capture: true });
+    addEventListener('keydown', once, { once: true, capture: true });
+  })();
 }
 
 (async function boot() {
@@ -4747,17 +4950,21 @@ function bootUI2() {
 })();
 
 /* small surface for tests and debugging */
-window.StarScale = {
+const API = {
   S: S, N: N, glInit: glInit, gpuUpscale: gpuUpscale, fitSize: fitSize,
   addFiles: addFiles, upscaleItem: upscaleItem, runAll: runAll,
   pickModel: pickModel, IS_FILE: IS_FILE, WORKER_SRC: WORKER_SRC,
   MODELS: MODELS, modelById: modelById, srcCanvasOf: srcCanvasOf, srcDims: srcDims,
   analyzeSubject: analyzeSubject, ensureModelLoaded: ensureModelLoaded,
+  downloadModel: downloadModel,
   setEngine: setEngine, applyPreset: applyPreset, analyzeImage: analyzeImage,
   applyGradeIfAny: applyGradeIfAny, recommendFor: recommendFor, showTool: showTool,
   palActions: palActions, updateOutputEst: updateOutputEst,
-  maybeFaceRecover: maybeFaceRecover, detectFaces: detectFaces
+  maybeFaceRecover: maybeFaceRecover, detectFaces: detectFaces,
+  undo: undo, redo: redo
 };
+window.StarScale = API;
+window.ImageUp = API;   /* legacy alias */
 </script>
 </body>
 </html>
