@@ -114,9 +114,9 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <div align="center">
 
-<a href="https://www.youtube.com/watch?v=3AtDnEC4zak" target="_blank" title="▶ We Don't Talk Anymore — Charlie Puth ft. Selena Gomez (official video)"><img src="assets/nowplaying.svg" width="100%" alt="now playing: We Don't Talk Anymore — Charlie Puth ft. Selena Gomez"></a>
+<img src="assets/nowplaying.svg" width="100%" alt="now playing: We Don't Talk Anymore — Charlie Puth ft. Selena Gomez">
 
-<!-- SOUNDTRACK: drag-drop MP4 into this README on github.com to get the native user-attachments player here -->
+<video src="https://raw.githubusercontent.com/Starlightmii/StarScale/main/assets/soundtrack.mp4" controls preload="metadata" width="100%" style="max-width:560px;border-radius:8px;border:1px solid #3a3a6a"></video>
 
 <img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
 
