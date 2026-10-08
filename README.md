@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572
+
 <div align="center">
 
 <img src="assets/banner.svg" alt="StarScale — AI × GPU image upscaler" width="100%">
