@@ -2,18 +2,18 @@
   <defs>
     <linearGradient id="fchrome" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
-      <stop offset=".5" stop-color="#c9d6e8"/>
-      <stop offset=".68" stop-color="#ff9ecf"/>
-      <stop offset="1" stop-color="#7de8e0"/>
+      <stop offset=".5" stop-color="#e8cfc4"/>
+      <stop offset=".68" stop-color="#f04452"/>
+      <stop offset="1" stop-color="#ffb03a"/>
     </linearGradient>
     <linearGradient id="dash" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff9ecf"/>
-      <stop offset=".5" stop-color="#7de8e0"/>
-      <stop offset="1" stop-color="#9ad34f"/>
+      <stop offset="0" stop-color="#f04452"/>
+      <stop offset=".5" stop-color="#ffb03a"/>
+      <stop offset="1" stop-color="#6fcf97"/>
     </linearGradient>
     <radialGradient id="glow" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#7de8e0" stop-opacity=".35"/>
-      <stop offset="1" stop-color="#7de8e0" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ffb03a" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#ffb03a" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
@@ -23,8 +23,8 @@
   </ellipse>
 
   <!-- input node -->
-  <text x="105" y="70" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" fill="#b8b8d8">blurry.jpg</text>
-  <text x="105" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" fill="#6f695b">256×256 ✦ artefacts</text>
+  <text x="105" y="70" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" fill="#d8bdb4">blurry.jpg</text>
+  <text x="105" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" fill="#8a7a72">256×256 ✦ artefacts</text>
 
   <!-- flow lines with marching dashes -->
   <line x1="215" y1="66" x2="310" y2="66" stroke="url(#dash)" stroke-width="2.5" stroke-dasharray="8 7">
@@ -35,20 +35,20 @@
   </line>
 
   <!-- core star-node -->
-  <rect x="315" y="38" width="250" height="56" rx="14" fill="#141044" stroke="url(#fchrome)" stroke-width="2"/>
+  <rect x="315" y="38" width="250" height="56" rx="14" fill="#1e1415" stroke="url(#fchrome)" stroke-width="2"/>
   <text x="440" y="73" text-anchor="middle" font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900" font-size="24" letter-spacing="3" fill="url(#fchrome)">★ STARSCALE ★</text>
 
   <!-- engine labels under the core -->
-  <text x="360" y="118" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" fill="#ff9ecf">AI neural<tspan fill="#6f695b"> · onnx</tspan></text>
-  <text x="520" y="118" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" fill="#7de8e0">GPU resample<tspan fill="#6f695b"> · webgl2</tspan></text>
-  <path d="M360 104 l0 -6 M520 104 l0 -6" stroke="#3a3a6a" stroke-width="1"/>
+  <text x="360" y="118" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" fill="#f04452">AI neural<tspan fill="#8a7a72"> · onnx</tspan></text>
+  <text x="520" y="118" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" fill="#ffb03a">GPU resample<tspan fill="#8a7a72"> · webgl2</tspan></text>
+  <path d="M360 104 l0 -6 M520 104 l0 -6" stroke="#382526" stroke-width="1"/>
 
   <!-- output node -->
-  <text x="760" y="70" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" fill="#9ad34f">crisp.png</text>
-  <text x="760" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" fill="#b8b8d8">1024×1024 ✦ 4×</text>
+  <text x="760" y="70" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" fill="#6fcf97">crisp.png</text>
+  <text x="760" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" fill="#d8bdb4">1024×1024 ✦ 4×</text>
 
   <!-- scale pop -->
-  <text x="838" y="42" font-family="'Courier New',monospace" font-size="15" fill="#ff9ecf">×4
+  <text x="838" y="42" font-family="'Courier New',monospace" font-size="15" fill="#f04452">×4
     <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite"/>
   </text>
 </svg>

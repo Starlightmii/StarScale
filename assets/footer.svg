@@ -5,9 +5,9 @@
       <stop offset="1" stop-color="#ffffff"/>
     </linearGradient>
     <linearGradient id="ffade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ff9ecf" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#7de8e0"/>
-      <stop offset="1" stop-color="#ff9ecf" stop-opacity="0"/>
+      <stop offset="0" stop-color="#f04452" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ffb03a"/>
+      <stop offset="1" stop-color="#f04452" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <rect x="150" y="52" width="580" height="2" fill="url(#ffade)"/>
@@ -17,7 +17,7 @@
     <g transform="rotate(-14)">
       <rect x="-90" y="-1.5" width="90" height="3" fill="url(#trail)" rx="1.5"/>
       <circle r="4" fill="#ffffff"/>
-      <circle r="7" fill="#ff9ecf" opacity=".35">
+      <circle r="7" fill="#f04452" opacity=".35">
         <animate attributeName="r" values="5;9;5" dur="1s" repeatCount="indefinite"/>
       </circle>
       <animateTransform attributeName="transform" type="translate" additive="sum"
@@ -26,7 +26,7 @@
   </g>
 
   <text x="440" y="86" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="17" letter-spacing="4" fill="#b8b8d8">✦ STARLIGHTMII ✦</text>
+        font-size="17" letter-spacing="4" fill="#d8bdb4">✦ STARLIGHTMII ✦</text>
   <text x="440" y="110" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="13" letter-spacing="2" fill="#6f695b">made under the stars in jaipur — for blurry photos everywhere</text>
+        font-size="13" letter-spacing="2" fill="#8a7a72">made under the stars in jaipur — for blurry photos everywhere</text>
 </svg>

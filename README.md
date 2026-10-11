@@ -5,10 +5,10 @@
 
 <img src="assets/banner.svg" alt="StarScale — AI × GPU image upscaler" width="100%">
 
-[![release](https://img.shields.io/github/v/release/Starlightmii/StarScale?style=for-the-badge&color=ff9ecf&labelColor=141044)](https://github.com/Starlightmii/StarScale/releases)
-[![license](https://img.shields.io/github/license/Starlightmii/StarScale?style=for-the-badge&color=7de8e0&labelColor=141044)](LICENSE)
-[![size](https://img.shields.io/badge/app_size-218_KB-9ad34f?style=for-the-badge&labelColor=141044)](index.html)
-[![no server](https://img.shields.io/badge/server-NONE_%E2%9C%A6_file%3A%2F%2F_ok-ff9ecf?style=for-the-badge&labelColor=141044)](#why-it-works-from-file)
+[![release](https://img.shields.io/github/v/release/Starlightmii/StarScale?style=for-the-badge&color=f04452&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/releases)
+[![license](https://img.shields.io/github/license/Starlightmii/StarScale?style=for-the-badge&color=ffb03a&labelColor=1e1415)](LICENSE)
+[![size](https://img.shields.io/badge/app_size-271_KB-6fcf97?style=for-the-badge&labelColor=1e1415)](index.html)
+[![no server](https://img.shields.io/badge/server-NONE_%E2%9C%A6_file%3A%2F%2F_ok-f04452?style=for-the-badge&labelColor=1e1415)](#why-it-works-from-file)
 
 **one html file · two engines · zero install**
 
@@ -45,7 +45,7 @@ xdg-open index.html
 python3 -m http.server 8000   # → http://localhost:8000
 ```
 
-Chrome menu → **Add to Home screen** = instant PWA. ✦
+Chrome menu → **Add to Home screen** = an instant standalone PWA — name, icon and wine splash included. ✦
 
 <img src="assets/terminal.svg" width="100%" alt="a starscale run, as a terminal log">
 
@@ -88,7 +88,7 @@ and recommends an engine/model. override it whenever you want.
 - **export** — PNG / JPEG (EXIF preserved) / WebP / all-at-once ZIP
 - **share** — native Android share sheet
 - **command palette** — `Ctrl/Cmd-K`, mouse optional
-- **two themes** — dark *pro* studio / light *paper* print-shop
+- **one theme, done properly** — *remix*: crimson on dark wine, glass, aurora and film grain
 
 <img src="assets/constellation.svg" width="100%" alt="constellation map of StarScale features">
 
@@ -119,7 +119,9 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <img src="assets/nowplaying.svg" width="100%" alt="now playing: We Don't Talk Anymore — Charlie Puth ft. Selena Gomez">
 
-https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572
+<img src="assets/soundtrack.svg" width="100%" alt="the StarScale official soundtrack, spinning in brand colors">
+
+*the old 4.3 MB mp4 panel is still on [the CDN](https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572) — the card above is the same tune at 18 KB.*
 
 <img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
 
@@ -165,8 +167,9 @@ model weights keep their respective licenses — check each HF page before comme
 ## 🗂 repo layout
 
 ```
-index.html      the entire app — UI, GLSL, worker (~4.6k lines)
-assets/         24 animated SVGs — the README is a Y2K screensaver now
+index.html      the entire app — UI, GLSL, worker (~5.1k lines)
+assets/         25 animated SVGs — the README is a Y2K screensaver now
+soundtrack.mp4  the source of the video panel (compressed, 1.7 MB)
 README.md       you are here ✦
 LICENSE         MIT
 ```
