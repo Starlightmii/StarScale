@@ -121,7 +121,9 @@ Blob worker from an inlined worker string, and injects the runtime via
 
 <img src="assets/soundtrack.svg" width="100%" alt="the StarScale official soundtrack, spinning in brand colors">
 
-*the old 4.3 MB mp4 panel is still on [the CDN](https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572) — the card above is the same tune at 18 KB.*
+https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572
+
+*github strips raw <video>/<audio> from readmes, so the uploaded attachment is the player — hit ▶ and unmute. the animated card above is the same tune drawn at 18 KB.*
 
 <img src="assets/guestbook.svg" width="100%" alt="the StarScale guestbook">
 
