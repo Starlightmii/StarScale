@@ -9,6 +9,7 @@
 [![license](https://img.shields.io/github/license/Starlightmii/StarScale?style=for-the-badge&color=ffb03a&labelColor=1e1415)](LICENSE)
 [![size](https://img.shields.io/badge/app_size-271_KB-ffb03a?style=for-the-badge&labelColor=1e1415)](index.html)
 [![no server](https://img.shields.io/badge/server-NONE_%E2%9C%A6_file%3A%2F%2F_ok-f04452?style=for-the-badge&labelColor=1e1415)](#why-it-works-from-file)
+[![last commit](https://img.shields.io/github/last-commit/Starlightmii/StarScale?style=for-the-badge&color=ffb03a&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/commits/main)
 [![stars](https://img.shields.io/github/stars/Starlightmii/StarScale?style=for-the-badge&color=ffb03a&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/stargazers)
 [![issues](https://img.shields.io/github/issues/Starlightmii/StarScale?style=for-the-badge&color=f04452&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/issues)
 [![prs](https://img.shields.io/badge/PRs-welcome-ffb03a?style=for-the-badge&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/pulls)
@@ -43,6 +44,9 @@
 </details>
 
 
+
+<img src="assets/divider.svg" width="100%" alt="">
+
 ## ✦ what is this
 
 **StarScale** is an AI & GPU image upscaler that lives in a *single `.html` file*.
@@ -59,6 +63,9 @@ and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernel
 
 <img src="assets/pixels.svg" alt="an 8×8 pixel heart upscaled 2× then 4× — same file, more stars" width="100%">
 
+
+<img src="assets/divider.svg" width="100%" alt="">
+
 ## 🎨 visual tour
 
 <div align="center">
@@ -74,9 +81,12 @@ and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernel
   </tr>
 </table>
 
-*janky ? no — the UI is a film-grade stage with aurora + film grain.*
+*no stock art. every diagram is hand-written svg with the live brand motion.*
 
 </div>
+
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## ⚡ quick start
 
@@ -104,6 +114,9 @@ Chrome menu → **Add to Home screen** = an instant standalone PWA — name, ico
 
 <img src="assets/terminal.svg" width="100%" alt="a starscale run, as a terminal log">
 
+
+<img src="assets/divider.svg" width="100%" alt="">
+
 ## 🛰 two engines, one file
 
 | | ☆ GPU RESAMPLE | ★ AI NEURAL |
@@ -129,6 +142,9 @@ dejpeg            1×   pre-pass       strips jpeg artefacts first
 
 ✦ the app *analyzes every import* — subject, noise, blur, jpeg artefacts, exposure —
 and recommends an engine/model. override it whenever you want.
+
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## 🎛 the workspace
 
@@ -159,9 +175,15 @@ and recommends an engine/model. override it whenever you want.
 
 <img src="assets/constellation.svg" width="100%" alt="constellation map of StarScale features">
 
+
+<img src="assets/divider.svg" width="100%" alt="">
+
 ## 📡 transmission: equalizer + counter
 
 <img src="assets/equalizer.svg" width="100%" alt="holo equalizer and pixel counter">
+
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## ✨ why it works from `file://`
 
@@ -179,6 +201,9 @@ Blob worker from an inlined worker string, and injects the runtime via
 `importScripts(blob)`. No server. No bundler. Verified in Chrome 151; Firefox works too.
 
 <img src="assets/wow.svg" width="100%" alt="before :(' → after ✦ wow">
+
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## 🎺 retro annex
 
@@ -198,6 +223,9 @@ https://github.com/user-attachments/assets/644b312b-8816-48ee-b3a8-b827cb557572
 
 </div>
 
+
+<img src="assets/divider.svg" width="100%" alt="">
+
 ## 🔒 privacy
 
 Images **never leave your device** — inference is local (WebGL / WebGPU / WASM).
@@ -210,6 +238,9 @@ Only network traffic, all cached after first use:
 ```
 
 Storage keys are namespaced `starscale.*` in IndexedDB/localStorage.
+
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## 🧬 sources & credits
 
@@ -232,6 +263,9 @@ model weights keep their respective licenses — check each HF page before comme
 <img src="assets/sparkline.svg" width="100%" alt="stars over time — projection: up">
 
 <img src="assets/crispometer.svg" width="100%" alt="the crisp-o-meter always reads MAX">
+
+
+<img src="assets/divider.svg" width="100%" alt="">
 
 ## 🗂 repo layout
 
