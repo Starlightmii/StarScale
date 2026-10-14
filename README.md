@@ -50,6 +50,8 @@ No install. No server. No build step. Open it in Chrome — desktop **or** Andro
 and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernels.
 
 > ✧ the whole app — UI, GLSL shaders, the AI worker — is one file you can email to someone ✧
+>
+> *mini-demo*: drop any image · hit `Ctrl`+`Enter` · compare the stars
 
 <img src="assets/marquee.svg" width="100%" alt="">
 
@@ -57,7 +59,37 @@ and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernel
 
 <img src="assets/pixels.svg" alt="an 8×8 pixel heart upscaled 2× then 4× — same file, more stars" width="100%">
 
+## 🎨 visual tour
+
+<div align="center">
+
+<table>
+  <tr>
+    <td><img src="assets/flow.svg" width="100%" alt="pipeline"></td>
+    <td><img src="assets/pixels.svg" width="100%" alt="pixels"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/terminal.svg" width="100%" alt="log"></td>
+    <td><img src="assets/constellation.svg" width="100%" alt="features"></td>
+  </tr>
+</table>
+
+*janky ? no — the UI is a film-grade stage with aurora + film grain.*
+
+</div>
+
 ## ⚡ quick start
+
+<div align="center">
+
+<|message|> platform | step | result |
+|---|---|---|
+| 🖥 **desktop** | double-click `index.html` | opens in browser, starts now |
+| 📱 **android** | `Files app → open with Chrome` | instant PWA install via menu ▼ |
+| 🌐 **serve** | `python3 -m http.server 8000` | `http://localhost:8000` |
+| ✦ **home screen** | Chrome `Add to Home screen` | wine splash · maskable icon · standalone |
+
+</div>
 
 ```bash
 # desktop — that's it:
@@ -99,6 +131,18 @@ dejpeg            1×   pre-pass       strips jpeg artefacts first
 and recommends an engine/model. override it whenever you want.
 
 ## 🎛 the workspace
+
+<div align="center">
+
+| pillar | what you get |
+|---|---|
+| **import** | drag / click / paste / *drop-anywhere* ✧ auto-categorizes subject & noise |
+| **edit** | crop · rotate · flip · faces toggle · color & light (GLSL) |
+| **compare** | split · side-by-side · difference · flicker · drag-to-center divider |
+| **batch** | queue · drag-reorder · per-item engine/model · pause-resume · retry |
+| **export** | PNG · JPEG (EXIF) · WebP · ZIP · share sheet · copy to clipboard |
+
+</div>
 
 - **import analysis + one-tap recommendations** — rule-based, transparent
 - **presets** — quality/speed dials without the dials
