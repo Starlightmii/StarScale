@@ -384,6 +384,68 @@ body[data-theme=remix] #stageMsg{background:
 body[data-theme=remix] #stageMsg .big{font:600 21px/1.25 var(--fd);
   letter-spacing:-.01em;color:var(--tx)}
 /* ====================== /PRO polish ====================== */
+/* aesthetic sweep: aurora-glass lux — layered light, breathing chips,
+   sovereign command chips, and a stage that reads like a gallery */
+body[data-theme=remix] .brand .dot{
+  position:relative;border-radius:7px;
+  background:linear-gradient(135deg,#f04452 0%,#ffb03a 100%);
+  box-shadow:0 0 14px -2px color-mix(in srgb,#f04452 60%,transparent),
+             inset 0 1px 0 color-mix(in srgb,#fff 35%,transparent)}
+body[data-theme=remix] .brand .dot::after{
+  content:"";position:absolute;inset:-3px;border-radius:9px;
+  border:1px solid color-mix(in srgb,#f04452 40%,transparent);
+  animation:brandRing 2.4s ease-in-out infinite}
+@keyframes brandRing{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:.15;transform:scale(1.18)}}
+body[data-theme=remix] .brand{font:600 19px/1 var(--fd);letter-spacing:.6px}
+body[data-theme=remix] .brand::after{content:"";display:inline-block;
+  width:32px;height:1px;margin-left:2px;
+  background:linear-gradient(90deg,color-mix(in srgb,#f04452 50%,transparent),transparent)}
+body[data-theme=remix] #topbar{box-shadow:inset 0 -1px 0 color-mix(in srgb,#ffb03a 12%,transparent),
+  0 1px 0 color-mix(in srgb,#000 30%,transparent);backdrop-filter:blur(2px)}
+body[data-theme=remix] .tbtn,.btn.sm{
+  border:1px solid var(--line2);background:color-mix(in srgb,var(--panel2) 88%,transparent)}
+body[data-theme=remix] .card{
+  background:color-mix(in srgb,var(--panel) 88%,transparent);
+  border:1px solid var(--line2);
+  box-shadow:0 1px 0 color-mix(in srgb,#fff 4%,transparent) inset,
+             0 8px 24px -16px color-mix(in srgb,#000 60%,transparent)}
+body[data-theme=remix] .card .ptitle{position:relative;padding-left:12px}
+body[data-theme=remix] .card .ptitle::before{
+  content:"";position:absolute;left:2px;top:2px;bottom:2px;width:2px;border-radius:2px;
+  background:linear-gradient(180deg,#f04452,#ffb03a)}
+body[data-theme=remix] #stage{
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,#f04452 22%,transparent),
+             0 0 0 1px color-mix(in srgb,#171011 80%,transparent) inset,
+             0 22px 60px -30px color-mix(in srgb,#f04452 30%,transparent)}
+body[data-theme=remix] #stageMsg .big{font:600 23px/1.2 var(--fd);letter-spacing:-.014em}
+body[data-theme=remix] #stageMsg p{font:italic 13px/1.5 var(--fd);color:var(--tx2)}
+body[data-theme=remix] .toast{
+  background:color-mix(in srgb,var(--panel) 92%,transparent);
+  border:1px solid var(--line2);border-left:3px solid var(--acc);
+  box-shadow:0 12px 32px -20px color-mix(in srgb,#000 80%,transparent);
+  animation:toastIn .24s cubic-bezier(.2,.9,.25,1)}
+@keyframes toastIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+body[data-theme=remix] .toast button{
+  background:none;border:0;color:var(--tx3);cursor:pointer;font:700 12px var(--fm)}
+body[data-theme=remix] .toast button:hover{color:var(--tx)}
+body[data-theme=remix] .busyPip{
+  width:8px;height:8px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#ff7a52,#f04452 65%,#c1301f 95%);
+  box-shadow:0 0 10px 1px color-mix(in srgb,#f04452 55%,transparent);
+  animation:busyPulse 1.2s ease-in-out infinite}
+@keyframes busyPulse{0%,100%{transform:scale(.92);opacity:.9}50%{transform:scale(1.18);opacity:1}}
+body[data-theme=remix] .queue-row{transition:transform .16s ease,box-shadow .2s ease,background .2s ease}
+body[data-theme=remix] .queue-row:hover{transform:translateY(-1px);
+  background:color-mix(in srgb,var(--panel2) 100%,transparent)}
+body[data-theme=remix] .split{
+  box-shadow:0 0 0 2px color-mix(in srgb,#f04452 35%,transparent),
+             0 0 12px 0 color-mix(in srgb,#f04452 25%,transparent)}
+body[data-theme=remix] #meta{color:var(--tx2);font:500 11px var(--fm);
+  letter-spacing:.4px;text-shadow:0 1px 0 color-mix(in srgb,#000 40%,transparent)}
+body[data-theme=remix] .rail .rtool.on{
+  background:linear-gradient(135deg,#f04452 0%,#d83a20 100%);
+  box-shadow:0 4px 14px -6px color-mix(in srgb,#f04452 70%,transparent)}
+
 
 /* ================================ shell ================================= */
 body{display:grid;grid-template-rows:48px minmax(0,1fr) auto;height:100%}
