@@ -1,125 +1,144 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="StarScale — AI and GPU image upscaler">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#171011"/>
-      <stop offset=".55" stop-color="#1e1415"/>
-      <stop offset="1" stop-color="#1e0a3e"/>
-    </linearGradient>
-    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f4f6ff"/>
-      <stop offset=".38" stop-color="#ffffff"/>
-      <stop offset=".52" stop-color="#e8cfc4"/>
-      <stop offset=".68" stop-color="#f04452"/>
-      <stop offset=".85" stop-color="#ffb03a"/>
-      <stop offset="1" stop-color="#ffc46a"/>
-    </linearGradient>
-    <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f04452">
-        <animate attributeName="stop-color" values="#f04452;#ffb03a;#ffc46a;#f04452" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset=".5" stop-color="#ffb03a">
-        <animate attributeName="stop-color" values="#ffb03a;#ffc46a;#f04452;#ffb03a" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="1" stop-color="#ffc46a">
-        <animate attributeName="stop-color" values="#ffc46a;#f04452;#ffb03a;#ffc46a" dur="9s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f04452" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#ffb03a"/>
-      <stop offset="1" stop-color="#f04452" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#ffffff" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="titleClip"><rect x="140" y="80" width="920" height="130"/></clipPath>
-    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="1" fill="#ffffff" opacity=".05"/>
-    </pattern>
-  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
-  <feGaussianBlur stdDeviation=".85" result="b"/>
-  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
-  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter></defs>
-<g filter="url(#artGlow)">
-
-  <rect width="1200" height="320" fill="url(#bg)"/>
-  <rect width="1200" height="320" fill="url(#scan)"/>
-
-  <!-- drifting holo sheen bands -->
-  <g>
-    <polygon points="180,0 300,0 60,320 -60,320" fill="#f04452" opacity=".07">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 140,0; 0,0" dur="13s" repeatCount="indefinite"/>
-    </polygon>
-    <polygon points="620,0 700,0 420,320 340,320" fill="#ffb03a" opacity=".06">
-      <animateTransform attributeName="transform" type="translate" values="0,0; -120,0; 0,0" dur="17s" repeatCount="indefinite"/>
-    </polygon>
-    <polygon points="1120,0 1200,0 1000,320 920,320" fill="#ffc46a" opacity=".06">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 90,0; 0,0" dur="11s" repeatCount="indefinite"/>
-    </polygon>
-  </g>
-
-  <!-- top + bottom chrome edges (hue-cycling) -->
-  <rect x="0" y="0" width="1200" height="6" fill="url(#holo)"/>
-  <rect x="0" y="314" width="1200" height="6" fill="url(#holo)"/>
-
-  <!-- chrome shine sweeping across the title -->
-  <g clip-path="url(#titleClip)">
-    <rect x="-160" y="60" width="120" height="170" fill="url(#shine)" transform="rotate(18)">
-      <animateTransform attributeName="transform" type="translate" values="-40,0; 1360,0" dur="4.5s" repeatCount="indefinite"/>
+<defs>
+  <radialGradient id="skyA" cx="18%" cy="-10%" r="74%">
+    <stop offset="0" stop-color="#3a1114"/>
+    <stop offset=".45" stop-color="#1a0d0e"/>
+    <stop offset="1" stop-color="#10080a"/>
+  </radialGradient>
+  <radialGradient id="skyB" cx="92%" cy="118%" r="60%">
+    <stop offset="0" stop-color="#f04452" stop-opacity=".42"/>
+    <stop offset=".55" stop-color="#ffb03a" stop-opacity=".14"/>
+    <stop offset="1" stop-color="#10080a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="skyC" cx="80%" cy="0%" r="44%">
+    <stop offset="0" stop-color="#ff7a52" stop-opacity=".22"/>
+    <stop offset="1" stop-color="#10080a" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffe6e8"/>
+    <stop offset=".18" stop-color="#f04452"/>
+    <stop offset=".5" stop-color="#ffb03a"/>
+    <stop offset=".78" stop-color="#ffc46a"/>
+    <stop offset="1" stop-color="#f04452"/>
+    <animate attributeName="x1" values="-1;2" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="1;3" dur="8s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".28"/>
+    <stop offset=".18" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#f04452" stop-opacity="0"/>
+    <stop offset=".15" stop-color="#f04452"/>
+    <stop offset=".5" stop-color="#ffb03a"/>
+    <stop offset=".85" stop-color="#f04452"/>
+    <stop offset="1" stop-color="#f04452" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="wordGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="6" result="bl"/>
+    <feColorMatrix in="bl" result="gl" values="1 0 0 0 0  0 .3 0 0 0  0 0 .2 0 0  0 0 0 1 0"/>
+    <feMerge><feMergeNode in="gl"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="sparkGlow" x="-200%" y="-200%" width="500%" height="500%">
+    <feGaussianBlur stdDeviation=".5"/>
+  </filter>
+  <filter id="noiseFilter" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence baseFrequency=".75" numOctaves="2" result="n" type="fractalNoise"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 .9  0 0 0 0 .85  0 0 0 .035 0"/>
+    <feBlend in="SourceGraphic" mode="overlay"/>
+  </filter>
+  <clipPath id="stageClip"><rect width="1200" height="320" rx="0"/></clipPath>
+  <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+    <rect width="3" height="1" fill="#ffffff" opacity=".035"/>
+  </pattern>
+  <pattern id="starPat" width="110" height="90" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="16" r=".7" fill="#f8ede6" opacity=".5"/>
+    <circle cx="82" cy="58" r="1.0" fill="#ffc46a" opacity=".45"/>
+    <circle cx="54" cy="78" r=".6" fill="#ffffff" opacity=".3"/>
+    <circle cx="96" cy="24" r=".8" fill="#f04452" opacity=".4"/>
+  </pattern>
+</defs>
+<rect width="1200" height="320" fill="url(#skyA)" filter="url(#noiseFilter)"/>
+<rect width="1200" height="320" fill="url(#skyB)"/>
+<rect width="1200" height="320" fill="url(#skyC)"/>
+<rect width="1200" height="320" fill="url(#starPat)" opacity=".7"/>
+<rect class="scan" width="1200" height="320" fill="url(#scan)"/>
+<!-- drifting aurora -->
+<g opacity=".92">
+  <ellipse cx="200" cy="70" rx="360" ry="150" fill="#f04452" fill-opacity=".22">
+    <animate attributeName="cx" values="200;290;200" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="360;420;360" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values=".22;.34;.22" dur="9s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="1030" cy="250" rx="380" ry="170" fill="#ffb03a" fill-opacity=".16">
+    <animate attributeName="cx" values="1030;940;1030" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values=".16;.27;.16" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="820" cy="-40" rx="300" ry="120" fill="#ff7a52" fill-opacity=".13">
+    <animate attributeName="cy" values="-40;-10;-40" dur="11s" repeatCount="indefinite"/>
+  </ellipse>
+</g>
+<!-- edge line -->
+<rect x="0" y="318" width="1200" height="2" fill="url(#edge)">
+  <animate attributeName="opacity" values="1;.65;1" dur="3s" repeatCount="indefinite"/>
+</rect>
+<g transform="translate(0,2)">
+  <!-- shining wordmark -->
+  <text x="600" y="178" text-anchor="middle" font-family="'Fraunces','Cardo',serif" font-weight="800" font-size="124" letter-spacing="-6" fill="url(#holo)" filter="url(#wordGlow)">StarScale</text>
+  <text x="600" y="178" text-anchor="middle" font-family="'Fraunces','Cardo',serif" font-weight="800" font-size="124" letter-spacing="-6" fill="url(#shine)">StarScale</text>
+  <!-- underline band -->
+  <g transform="translate(600,196)">
+    <rect x="-330" y="0" width="660" height="1.5" fill="url(#edge)" opacity=".6"/>
+    <rect x="-180" y="-2" width="360" height="5" rx="2.5" fill="url(#holo)" opacity=".55" filter="url(#sparkGlow)">
+      <animate attributeName="x" values="-180;150;-180" dur="4s" repeatCount="indefinite"/>
     </rect>
   </g>
-
-  <!-- twinkling sparkles -->
-  <g fill="#ffffff">
-    <path d="M150 84 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z">
-      <animate attributeName="opacity" values="1;.15;1" dur="2.2s" repeatCount="indefinite"/>
-    </path>
-    <path d="M1042 70 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" fill="#f04452">
-      <animate attributeName="opacity" values=".2;1;.2" dur="1.8s" begin=".4s" repeatCount="indefinite"/>
-    </path>
-    <path d="M980 240 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#ffb03a">
-      <animate attributeName="opacity" values="1;.2;1" dur="2.6s" begin=".9s" repeatCount="indefinite"/>
-    </path>
-    <path d="M210 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#ffc46a">
-      <animate attributeName="opacity" values=".25;1;.25" dur="2s" begin="1.3s" repeatCount="indefinite"/>
-    </path>
-    <path d="M598 46 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z">
-      <animate attributeName="opacity" values="1;.1;1" dur="1.5s" begin=".6s" repeatCount="indefinite"/>
-    </path>
-    <circle cx="300" cy="60" r="2"><animate attributeName="opacity" values=".8;.1;.8" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="900" cy="270" r="2" fill="#f04452"><animate attributeName="opacity" values=".2;.9;.2" dur="2.4s" begin="1.1s" repeatCount="indefinite"/></circle>
-    <circle cx="760" cy="52" r="1.6" fill="#ffb03a"><animate attributeName="opacity" values="1;.15;1" dur="2.8s" begin=".2s" repeatCount="indefinite"/></circle>
-    <circle cx="86" cy="180" r="1.5" fill="#ffffff"><animate attributeName="opacity" values=".7;.1;.7" dur="2.1s" begin="1.6s" repeatCount="indefinite"/></circle>
-    <circle cx="1126" cy="180" r="1.5" fill="#f04452"><animate attributeName="opacity" values=".15;.9;.15" dur="1.9s" begin=".7s" repeatCount="indefinite"/></circle>
-  </g>
-
-  <!-- title -->
-  <text x="600" y="192" text-anchor="middle"
-        font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900"
-        font-size="104" letter-spacing="10" fill="none"
-        stroke="#f04452" stroke-opacity=".35" stroke-width="1.5">STARSCALE</text>
-  <text x="600" y="188" text-anchor="middle"
-        font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900"
-        font-size="104" letter-spacing="10" fill="url(#chrome)"
-        stroke="#20204a" stroke-width="2">STARSCALE</text>
-
-  <!-- subtitle (breathing) -->
-  <text x="600" y="238" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="24" letter-spacing="10" fill="#ffb03a">AI × GPU IMAGE UPSCALER
-    <animate attributeName="opacity" values="1;.65;1" dur="3.5s" repeatCount="indefinite"/>
+  <text x="600" y="232" text-anchor="middle" font-family="'Cardo',Georgia,serif" font-style="italic" fill="#f1ddd8" font-size="20" letter-spacing=".4" opacity=".92">
+    AI &amp; GPU image upscaler · one html file · zero install ✦
   </text>
-
-  <!-- divider line with a travelling glint -->
-  <rect x="330" y="262" width="540" height="2" fill="url(#edge)"/>
-  <rect x="330" y="261" width="70" height="4" fill="#ffffff" opacity=".65">
-    <animate attributeName="x" values="330;800;330" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <text x="600" y="292" text-anchor="middle" font-family="'Courier New',monospace"
-        font-size="17" letter-spacing="5" fill="#d8bdb4">✦ ONE FILE · NO INSTALL · WORKS OFFLINE ✦</text>
-
+  <text x="600" y="276" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#8a7a72" letter-spacing="2.6">
+    OPEN  ·  DROP  ·  RUN  ·  compare · export · repeat
+  </text>
+  <!-- floating spark gems -->
+  <g filter="url(#sparkGlow)">
+    <circle cx="168" cy="92" r="1.6" fill="#f04452">
+      <animate attributeName="cy" values="92;82;92" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".9;.2;.9" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="302" cy="48" r="2" fill="#ffb03a">
+      <animate attributeName="cy" values="48;36;48" dur="4.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;.18;.8" dur="4.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="960" cy="82" r="1.7" fill="#ffc46a">
+      <animate attributeName="cy" values="82;70;82" dur="3.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".85;.15;.85" dur="3.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1078" cy="152" r="1.3" fill="#f04452">
+      <animate attributeName="cy" values="152;138;152" dur="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".75;.12;.75" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="104" cy="236" r="1.4" fill="#ffb03a">
+      <animate attributeName="cy" values="236;222;236" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".6;.1;.6" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <!-- corner cross marks -->
+  <g stroke="#f8ede6" stroke-width="1" opacity=".32">
+    <line x1="28" y1="32" x2="44" y2="32"/>
+    <line x1="28" y1="32" x2="28" y2="48"/>
+    <line x1="1172" y1="32" x2="1156" y2="32"/>
+    <line x1="1172" y1="32" x2="1172" y2="48"/>
+    <line x1="28" y1="288" x2="44" y2="288"/>
+    <line x1="28" y1="288" x2="28" y2="272"/>
+    <line x1="1172" y1="288" x2="1156" y2="288"/>
+    <line x1="1172" y1="288" x2="1172" y2="272"/>
+  </g>
+  <!-- subtle vignette -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="78%">
+    <stop offset=".55" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000000" stop-opacity=".45"/>
+  </radialGradient>
+  <rect width="1200" height="320" fill="url(#vignette)"/>
+  <rect width="1200" height="320" fill="url(#shine)"/>
 </g>
 </svg>
