@@ -383,6 +383,30 @@ body[data-theme=remix] #stageMsg{background:
     color-mix(in srgb,var(--acc) 8%,transparent),transparent 72%)}
 body[data-theme=remix] #stageMsg .big{font:600 21px/1.25 var(--fd);
   letter-spacing:-.01em;color:var(--tx)}
+
+/* remix lux mark II — alive UI: sheened buttons, focus rings, tab hovers */
+body[data-theme=remix] .btn,.tbtn{
+  transition:transform .16s ease,box-shadow .18s ease,background .18s ease,border-color .18s ease}
+body[data-theme=remix] .btn:hover,.tbtn:hover{transform:translateY(-1px)}
+body[data-theme=remix] .btn:focus-visible,
+body[data-theme=remix] .tbtn:focus-visible,
+body[data-theme=remix] input:focus-visible, body[data-theme=remix] select:focus-visible{
+  outline:none;box-shadow:var(--focus-ring,0 0 0 2px color-mix(in srgb,#f04452 70%,transparent))}
+body[data-theme=remix] .tab{transition:color .14s ease,background .14s ease,transform .16s ease}
+body[data-theme=remix] .tab:hover{transform:translateY(-1px)}
+body[data-theme=remix] .tab.on{box-shadow:0 0 0 1px color-mix(in srgb,#f04452 28%,transparent)}
+body[data-theme=remix] input[type=range]{accent-color:#f04452}
+body[data-theme=remix] input[type=range]::-webkit-slider-thumb{
+  box-shadow:0 0 0 3px color-mix(in srgb,#f04452 28%,transparent)}
+body[data-theme=remix] input[type=range]::-moz-range-thumb{
+  box-shadow:0 0 0 3px color-mix(in srgb,#f04452 28%,transparent)}
+body[data-theme=remix] .rail .rtool{transition:background .18s ease,color .18s ease,transform .16s ease}
+body[data-theme=remix] .rail .rtool:hover{transform:translateY(-2px)}
+body[data-theme=remix] .rtool.on{transform:none}
+body[data-theme=remix] #qbHead{transition:background .18s ease}
+body[data-theme=remix] #qbHead:hover{background:color-mix(in srgb,#1e1415 92%,#f04452 8%)}
+body[data-theme=remix] .queue-row .qtag{animation:none}
+body[data-theme=remix] .queue-row.act{box-shadow:inset 0 0 0 1px color-mix(in srgb,#f04452 40%,transparent)}
 /* ====================== /PRO polish ====================== */
 /* aesthetic sweep: aurora-glass lux — layered light, breathing chips,
    sovereign command chips, and a stage that reads like a gallery */
