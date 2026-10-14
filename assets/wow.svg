@@ -3,8 +3,8 @@
     <clipPath id="lens"><circle cx="440" cy="105" r="78"/></clipPath>
     <radialGradient id="vign"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
     <linearGradient id="zg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f04452"><animate attributeName="stop-color" values="#f04452;#ffb03a;#6fcf97;#f04452" dur="7s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#ffb03a"><animate attributeName="stop-color" values="#ffb03a;#6fcf97;#f04452;#ffb03a" dur="7s" repeatCount="indefinite"/></stop>
+      <stop offset="0" stop-color="#f04452"><animate attributeName="stop-color" values="#f04452;#ffb03a;#ffc46a;#f04452" dur="7s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#ffb03a"><animate attributeName="stop-color" values="#ffb03a;#ffc46a;#f04452;#ffb03a" dur="7s" repeatCount="indefinite"/></stop>
     </linearGradient>
     <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
     <filter id="blur2"><feGaussianBlur stdDeviation="1.2"/></filter>
@@ -52,7 +52,7 @@
     <text x="180" y="110" text-anchor="middle" fill="#8a7a72">before :(
       <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.2;.3;.9;1" dur="6s" repeatCount="indefinite"/>
     </text>
-    <text x="700" y="110" text-anchor="middle" fill="#6fcf97">after ✦ wow
+    <text x="700" y="110" text-anchor="middle" fill="#ffc46a">after ✦ wow
       <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.3;.42;.9;1" dur="6s" repeatCount="indefinite"/>
     </text>
   </g>

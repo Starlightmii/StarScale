@@ -13,7 +13,7 @@
       <circle cx="70" cy="55" r="34" fill="#f0e2da"/>
       <path d="M70 21 A34 34 0 0 1 104 55 L70 55 Z" fill="#f04452" opacity=".65"/>
       <path d="M70 89 A34 34 0 0 1 36 55 L70 55 Z" fill="#ffb03a" opacity=".65"/>
-      <path d="M70 21 A34 34 0 0 0 36 55 L70 55 Z" fill="#6fcf97" opacity=".45"/>
+      <path d="M70 21 A34 34 0 0 0 36 55 L70 55 Z" fill="#ffc46a" opacity=".45"/>
       <circle cx="70" cy="55" r="9" fill="#171011"/>
       <circle cx="70" cy="55" r="3.5" fill="#f0e2da"/>
     </g>

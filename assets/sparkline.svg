@@ -31,11 +31,11 @@
     <animateMotion path="M40,118 L130,102 L220,108 L310,84 L400,92 L490,70 L580,58" dur="5s" keyTimes="0;.45;1" repeatCount="indefinite"/>
   </circle>
   <!-- projection arrow into stars -->
-  <path d="M580 58 q80 -14 150 -10" fill="none" stroke="#6fcf97" stroke-width="2" stroke-dasharray="6 6">
+  <path d="M580 58 q80 -14 150 -10" fill="none" stroke="#ffc46a" stroke-width="2" stroke-dasharray="6 6">
     <animate attributeName="stroke-dashoffset" values="0;-48" dur="1.2s" repeatCount="indefinite"/>
   </path>
-  <path d="M736 44 l12 5 -12 5 z" fill="#6fcf97"/>
-  <text x="700" y="100" font-family="'Courier New',monospace" font-size="13" fill="#6fcf97">your star here ✦</text>
+  <path d="M736 44 l12 5 -12 5 z" fill="#ffc46a"/>
+  <text x="700" y="100" font-family="'Courier New',monospace" font-size="13" fill="#ffc46a">your star here ✦</text>
   <text x="760" y="118" font-family="'Courier New',monospace" font-size="11" fill="#8a7a72">(github.com/Starlightmii)</text>
 
   <!-- axis -->

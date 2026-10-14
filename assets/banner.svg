@@ -11,17 +11,17 @@
       <stop offset=".52" stop-color="#e8cfc4"/>
       <stop offset=".68" stop-color="#f04452"/>
       <stop offset=".85" stop-color="#ffb03a"/>
-      <stop offset="1" stop-color="#6fcf97"/>
+      <stop offset="1" stop-color="#ffc46a"/>
     </linearGradient>
     <linearGradient id="holo" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#f04452">
-        <animate attributeName="stop-color" values="#f04452;#ffb03a;#6fcf97;#f04452" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#f04452;#ffb03a;#ffc46a;#f04452" dur="9s" repeatCount="indefinite"/>
       </stop>
       <stop offset=".5" stop-color="#ffb03a">
-        <animate attributeName="stop-color" values="#ffb03a;#6fcf97;#f04452;#ffb03a" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#ffb03a;#ffc46a;#f04452;#ffb03a" dur="9s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="1" stop-color="#6fcf97">
-        <animate attributeName="stop-color" values="#6fcf97;#f04452;#ffb03a;#6fcf97" dur="9s" repeatCount="indefinite"/>
+      <stop offset="1" stop-color="#ffc46a">
+        <animate attributeName="stop-color" values="#ffc46a;#f04452;#ffb03a;#ffc46a" dur="9s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
@@ -51,7 +51,7 @@
     <polygon points="620,0 700,0 420,320 340,320" fill="#ffb03a" opacity=".06">
       <animateTransform attributeName="transform" type="translate" values="0,0; -120,0; 0,0" dur="17s" repeatCount="indefinite"/>
     </polygon>
-    <polygon points="1120,0 1200,0 1000,320 920,320" fill="#6fcf97" opacity=".06">
+    <polygon points="1120,0 1200,0 1000,320 920,320" fill="#ffc46a" opacity=".06">
       <animateTransform attributeName="transform" type="translate" values="0,0; 90,0; 0,0" dur="11s" repeatCount="indefinite"/>
     </polygon>
   </g>
@@ -78,7 +78,7 @@
     <path d="M980 240 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#ffb03a">
       <animate attributeName="opacity" values="1;.2;1" dur="2.6s" begin=".9s" repeatCount="indefinite"/>
     </path>
-    <path d="M210 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#6fcf97">
+    <path d="M210 250 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#ffc46a">
       <animate attributeName="opacity" values=".25;1;.25" dur="2s" begin="1.3s" repeatCount="indefinite"/>
     </path>
     <path d="M598 46 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 z">

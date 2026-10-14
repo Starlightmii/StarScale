@@ -28,7 +28,7 @@
     <!-- flying pixel blocks -->
     <rect x="330" y="72" width="8" height="8" fill="#f04452"><animate attributeName="y" values="72;52;72" dur=".8s" repeatCount="indefinite"/><animate attributeName="x" values="330;356;330" dur=".8s" repeatCount="indefinite"/></rect>
     <rect x="344" y="76" width="6" height="6" fill="#ffb03a"><animate attributeName="y" values="76;60;76" dur=".65s" begin=".2s" repeatCount="indefinite"/><animate attributeName="x" values="344;368;344" dur=".65s" begin=".2s" repeatCount="indefinite"/></rect>
-    <rect x="338" y="74" width="5" height="5" fill="#6fcf97"><animate attributeName="y" values="74;58;74" dur=".9s" begin=".35s" repeatCount="indefinite"/><animate attributeName="x" values="338;352;338" dur=".9s" begin=".35s" repeatCount="indefinite"/></rect>
+    <rect x="338" y="74" width="5" height="5" fill="#ffc46a"><animate attributeName="y" values="74;58;74" dur=".9s" begin=".35s" repeatCount="indefinite"/><animate attributeName="x" values="338;352;338" dur=".9s" begin=".35s" repeatCount="indefinite"/></rect>
     <!-- dirt mound -->
     <path d="M300 84 q28 -14 56 0 z" fill="#2a2440"/>
   </g>

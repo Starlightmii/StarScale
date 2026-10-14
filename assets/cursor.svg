@@ -8,11 +8,11 @@
   <g fill="#f04452">
     <path d="M170 78 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="0s" repeatCount="indefinite"/></path>
     <path d="M250 66 l4.5 11 11 4.5 -11 4.5 -4.5 11 -4.5 -11 -11 -4.5 11 -4.5 z" fill="#ffb03a"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin=".25s" repeatCount="indefinite"/></path>
-    <path d="M330 80 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#6fcf97"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin=".5s" repeatCount="indefinite"/></path>
+    <path d="M330 80 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#ffc46a"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin=".5s" repeatCount="indefinite"/></path>
     <path d="M410 62 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z" fill="#ffc46a"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin=".75s" repeatCount="indefinite"/></path>
     <path d="M490 74 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5 z" fill="#f04452"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1s" repeatCount="indefinite"/></path>
     <path d="M570 64 l3.5 8 8 3.5 -8 3.5 -3.5 8 -3.5 -8 -8 -3.5 8 -3.5 z" fill="#ffb03a"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1.25s" repeatCount="indefinite"/></path>
-    <path d="M650 76 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#6fcf97"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1.5s" repeatCount="indefinite"/></path>
+    <path d="M650 76 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#ffc46a"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1.5s" repeatCount="indefinite"/></path>
     <path d="M720 66 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="#ffc46a"><animate attributeName="opacity" values="0;.95;0" dur="3s" begin="1.75s" repeatCount="indefinite"/></path>
   </g>
   <!-- hand cursor riding the wave -->

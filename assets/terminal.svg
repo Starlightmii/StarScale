@@ -15,11 +15,11 @@
   <g font-family="'Courier New',monospace" font-size="15" xml:space="preserve">
     <!-- each line appears at its beat, whole log loops every 10s -->
     <text x="35" y="70" fill="#f8ede6"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.04;.05;1" dur="10s" repeatCount="indefinite"/>$ <tspan fill="#ffb03a">starscale</tspan> blurry.jpg <tspan fill="#d8bdb4">--scale 4</tspan></text>
-    <text x="35" y="96" fill="#6fcf97"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;1.6;1.62;10" dur="10s" repeatCount="indefinite"/>▸ analyzing subject … <tspan fill="#d8bdb4">photo ✓</tspan></text>
-    <text x="35" y="122" fill="#6fcf97"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;2.8;2.82;3.99" dur="10s" repeatCount="indefinite"/>▸ noise 0.12 · blur 0.18 · jpeg artefacts <tspan fill="#d8bdb4">✓</tspan><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;2.8;2.82;10" dur="10s" repeatCount="indefinite"/></text>
-    <text x="35" y="148" fill="#6fcf97"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;4.0;4.02;10" dur="10s" repeatCount="indefinite"/>▸ engine <tspan fill="#f04452">AI neural</tspan> · model <tspan fill="#ffb03a">purephoto-span</tspan> (1.6 MB)</text>
-    <text x="35" y="174" fill="#6fcf97"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;5.2;5.22;10" repeatCount="indefinite" dur="10s"/>▸ upscaling 4× …</text>
-    <text x="35" y="174" fill="#6fcf97"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;4.0;4.02;10" dur="10s" repeatCount="indefinite"/></text>
+    <text x="35" y="96" fill="#ffc46a"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;1.6;1.62;10" dur="10s" repeatCount="indefinite"/>▸ analyzing subject … <tspan fill="#d8bdb4">photo ✓</tspan></text>
+    <text x="35" y="122" fill="#ffc46a"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;2.8;2.82;3.99" dur="10s" repeatCount="indefinite"/>▸ noise 0.12 · blur 0.18 · jpeg artefacts <tspan fill="#d8bdb4">✓</tspan><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;2.8;2.82;10" dur="10s" repeatCount="indefinite"/></text>
+    <text x="35" y="148" fill="#ffc46a"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;4.0;4.02;10" dur="10s" repeatCount="indefinite"/>▸ engine <tspan fill="#f04452">AI neural</tspan> · model <tspan fill="#ffb03a">purephoto-span</tspan> (1.6 MB)</text>
+    <text x="35" y="174" fill="#ffc46a"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;5.2;5.22;10" repeatCount="indefinite" dur="10s"/>▸ upscaling 4× …</text>
+    <text x="35" y="174" fill="#ffc46a"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;4.0;4.02;10" dur="10s" repeatCount="indefinite"/></text>
     <!-- progress bar -->
     <rect x="252" y="136" width="250" height="16" rx="4" fill="#1c1a15" stroke="#382526" stroke-width="1"/>
     <rect x="255" y="139" width="0" height="10" rx="3" fill="url(#tbar)"><animate attributeName="width" values="0;0;244;244" keyTimes="0;0.56;0.92;1" dur="10s" repeatCount="indefinite"/></rect>

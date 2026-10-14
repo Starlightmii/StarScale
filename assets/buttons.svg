@@ -12,9 +12,9 @@
     <text x="141" y="19" text-anchor="middle" fill="#ffb03a">★ CLOUD</text>
     <text x="141" y="31" text-anchor="middle" fill="#d8bdb4">NOT FOUND</text>
     <!-- button 3 -->
-    <rect x="191" y="5" width="88" height="31" rx="3" fill="#1e1415" stroke="#6fcf97" stroke-width="1"/>
-    <rect x="191" y="5" width="88" height="12" rx="3" fill="#6fcf97" opacity=".22"/>
-    <text x="235" y="19" text-anchor="middle" fill="#6fcf97">WEBGL2</text>
+    <rect x="191" y="5" width="88" height="31" rx="3" fill="#1e1415" stroke="#ffc46a" stroke-width="1"/>
+    <rect x="191" y="5" width="88" height="12" rx="3" fill="#ffc46a" opacity=".22"/>
+    <text x="235" y="19" text-anchor="middle" fill="#ffc46a">WEBGL2</text>
     <text x="235" y="31" text-anchor="middle" fill="#d8bdb4">INSIDE</text>
     <!-- button 4 -->
     <rect x="285" y="5" width="88" height="31" rx="3" fill="#1e1415" stroke="#f04452" stroke-width="1"/>
@@ -23,7 +23,7 @@
     <text x="329" y="31" text-anchor="middle" fill="#d8bdb4">APPROVED ✦</text>
     <!-- button 5 -->
     <rect x="379" y="5" width="88" height="31" rx="3" fill="#1e1415" stroke="#ffb03a" stroke-width="1">
-      <animate attributeName="stroke" values="#ffb03a;#f04452;#6fcf97;#ffb03a" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke" values="#ffb03a;#f04452;#ffc46a;#ffb03a" dur="5s" repeatCount="indefinite"/>
     </rect>
     <text x="423" y="19" text-anchor="middle" fill="#f8ede6">EST. 2026</text>
     <text x="423" y="31" text-anchor="middle" fill="#d8bdb4">✦ ✦ ✦</text>

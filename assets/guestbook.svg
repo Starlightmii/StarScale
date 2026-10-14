@@ -5,7 +5,7 @@
   <g font-family="'Courier New',monospace" font-size="15">
     <text x="55" y="92" fill="#f8ede6"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.06;.1;1" dur="9s" repeatCount="indefinite"/>✦ <tspan fill="#ffb03a">starlightmii</tspan> · 2026-10-02 · <tspan fill="#8a7a72">"first!!1 ★ the stars did the rest"</tspan></text>
     <text x="55" y="124" fill="#f8ede6"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.2;.24;1" dur="9s" repeatCount="indefinite"/>✦ <tspan fill="#f04452">qiqi</tspan> · 2026-10-02 · <tspan fill="#8a7a72">"crisp photos make me happy (⁄ ⁄•⁄ω⁄•⁄ ⁄)"</tspan></text>
-    <text x="55" y="156" fill="#f8ede6"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.34;.38;1" dur="9s" repeatCount="indefinite"/>✦ <tspan fill="#6fcf97">anonymous</tspan> · 1998-13-32 · <tspan fill="#8a7a72">"cool page. found via webring. bookmarked"</tspan></text>
+    <text x="55" y="156" fill="#f8ede6"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.34;.38;1" dur="9s" repeatCount="indefinite"/>✦ <tspan fill="#ffc46a">anonymous</tspan> · 1998-13-32 · <tspan fill="#8a7a72">"cool page. found via webring. bookmarked"</tspan></text>
   </g>
   <!-- sign button -->
   <rect x="360" y="180" width="160" height="30" rx="15" fill="#1e1415" stroke="#ffb03a" stroke-width="1.5">

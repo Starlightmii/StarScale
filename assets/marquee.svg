@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="54" viewBox="0 0 880 54" role="img" aria-label="scrolling tagline: single file, two engines, zero install, infinite stars">
   <defs>
     <linearGradient id="mtop" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#f04452"><animate attributeName="stop-color" values="#f04452;#ffb03a;#6fcf97;#f04452" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#ffb03a"><animate attributeName="stop-color" values="#ffb03a;#6fcf97;#f04452;#ffb03a" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="0" stop-color="#f04452"><animate attributeName="stop-color" values="#f04452;#ffb03a;#ffc46a;#f04452" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#ffb03a"><animate attributeName="stop-color" values="#ffb03a;#ffc46a;#f04452;#ffb03a" dur="8s" repeatCount="indefinite"/></stop>
     </linearGradient>
     <clipPath id="mwin"><rect x="8" y="10" width="864" height="34" rx="8"/></clipPath>
   </defs>

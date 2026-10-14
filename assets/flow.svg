@@ -9,7 +9,7 @@
     <linearGradient id="dash" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#f04452"/>
       <stop offset=".5" stop-color="#ffb03a"/>
-      <stop offset="1" stop-color="#6fcf97"/>
+      <stop offset="1" stop-color="#ffc46a"/>
     </linearGradient>
     <radialGradient id="glow" cx=".5" cy=".5" r=".5">
       <stop offset="0" stop-color="#ffb03a" stop-opacity=".35"/>
@@ -44,7 +44,7 @@
   <path d="M360 104 l0 -6 M520 104 l0 -6" stroke="#382526" stroke-width="1"/>
 
   <!-- output node -->
-  <text x="760" y="70" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" fill="#6fcf97">crisp.png</text>
+  <text x="760" y="70" text-anchor="middle" font-family="'Courier New',monospace" font-size="22" fill="#ffc46a">crisp.png</text>
   <text x="760" y="96" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" fill="#d8bdb4">1024×1024 ✦ 4×</text>
 
   <!-- scale pop -->
