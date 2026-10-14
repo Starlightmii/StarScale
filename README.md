@@ -14,11 +14,13 @@
 [![issues](https://img.shields.io/github/issues/Starlightmii/StarScale?style=for-the-badge&color=f04452&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/issues)
 [![prs](https://img.shields.io/badge/PRs-welcome-ffb03a?style=for-the-badge&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/pulls)
 
-**one html file · two engines · zero install**
+**one html file · 271 KB · two engines · zero install · zero build**
 
 *point it at a blurry photo → watch the stars do the rest* ✦
 
 </div>
+
+<img src="assets/starfield.svg" width="100%" alt="ambient stars">
 
 <img src="assets/webring.svg" width="100%" alt="starlight webring nav">
 
