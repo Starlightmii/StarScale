@@ -8,7 +8,12 @@
       <stop offset="0" stop-color="#ffb03a" stop-opacity=".18"/>
       <stop offset="1" stop-color="#ffb03a" stop-opacity="0"/>
     </radialGradient>
-  </defs>
+  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation=".85" result="b"/>
+  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g filter="url(#artGlow)">
   <rect width="880" height="330" fill="#171011"/>
   <rect width="880" height="330" fill="url(#ngc)" opacity=".8"/>
   <rect width="880" height="330" fill="url(#ngc2)" opacity=".8"/>
@@ -58,4 +63,6 @@
   </g>
 
   <text x="440" y="322" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" letter-spacing="4" fill="#8a7a72">— the starscale constellation —</text>
+
+</g>
 </svg>

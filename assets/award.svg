@@ -7,7 +7,12 @@
     <radialGradient id="aglow" cx=".5" cy=".5" r=".5">
       <stop offset="0" stop-color="#ffc46a" stop-opacity=".4"/><stop offset="1" stop-color="#ffc46a" stop-opacity="0"/>
     </radialGradient>
-  </defs>
+  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation=".85" result="b"/>
+  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g filter="url(#artGlow)">
   <rect width="880" height="130" fill="#171011"/>
 
   <!-- award rosette -->
@@ -43,4 +48,6 @@
     <text y="6" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="13" fill="#ffc46a">✦hot✦</text>
   </g>
   <text x="720" y="120" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#8a7a72">certified: hot</text>
+
+</g>
 </svg>

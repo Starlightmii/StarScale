@@ -38,7 +38,12 @@
     <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="1" fill="#ffffff" opacity=".05"/>
     </pattern>
-  </defs>
+  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation=".85" result="b"/>
+  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g filter="url(#artGlow)">
 
   <rect width="1200" height="320" fill="url(#bg)"/>
   <rect width="1200" height="320" fill="url(#scan)"/>
@@ -115,4 +120,6 @@
 
   <text x="600" y="292" text-anchor="middle" font-family="'Courier New',monospace"
         font-size="17" letter-spacing="5" fill="#d8bdb4">✦ ONE FILE · NO INSTALL · WORKS OFFLINE ✦</text>
+
+</g>
 </svg>

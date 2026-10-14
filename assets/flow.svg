@@ -15,7 +15,12 @@
       <stop offset="0" stop-color="#ffb03a" stop-opacity=".35"/>
       <stop offset="1" stop-color="#ffb03a" stop-opacity="0"/>
     </radialGradient>
-  </defs>
+  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation=".85" result="b"/>
+  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g filter="url(#artGlow)">
 
   <!-- glow behind the core -->
   <ellipse cx="440" cy="75" rx="200" ry="60" fill="url(#glow)">
@@ -51,4 +56,6 @@
   <text x="838" y="42" font-family="'Courier New',monospace" font-size="15" fill="#f04452">×4
     <animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite"/>
   </text>
+
+</g>
 </svg>

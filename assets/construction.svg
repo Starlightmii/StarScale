@@ -7,7 +7,12 @@
     <linearGradient id="cstrip" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#f04452"/><stop offset="1" stop-color="#ffb03a"/>
     </linearGradient>
-  </defs>
+  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation=".85" result="b"/>
+  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g filter="url(#artGlow)">
   <rect width="880" height="120" fill="#171011"/>
   <rect x="0" y="0" width="880" height="14" fill="url(#caution)"/>
   <rect x="0" y="106" width="880" height="14" fill="url(#caution)"/>
@@ -43,4 +48,6 @@
 
   <rect x="40" y="30" width="2" height="60" fill="url(#cstrip)" opacity=".4"/>
   <rect x="838" y="30" width="2" height="60" fill="url(#cstrip)" opacity=".4"/>
+
+</g>
 </svg>

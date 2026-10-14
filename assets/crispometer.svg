@@ -4,7 +4,12 @@
       <stop offset="0" stop-color="#f04452"><animate attributeName="stop-color" values="#f04452;#ffb03a;#ffc46a;#f04452" dur="6s" repeatCount="indefinite"/></stop>
       <stop offset="1" stop-color="#ffb03a"><animate attributeName="stop-color" values="#ffb03a;#ffc46a;#f04452;#ffb03a" dur="6s" repeatCount="indefinite"/></stop>
     </linearGradient>
-  </defs>
+  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation=".85" result="b"/>
+  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter></defs>
+<g filter="url(#artGlow)">
   <rect width="880" height="70" fill="#171011"/>
   <text x="35" y="43" font-family="'Courier New',monospace" font-weight="bold" font-size="16" fill="#f8ede6">CRISP-O-METER™</text>
   <rect x="215" y="24" width="560" height="22" rx="11" fill="#120c0d" stroke="#382526" stroke-width="1.5"/>
@@ -24,4 +29,6 @@
   <text x="500" y="60" font-family="'Courier New',monospace" font-size="12" fill="#8a7a72">
     <animate attributeName="opacity" values="0;1;0" dur="7s" keyTimes="0;.85;1" repeatCount="indefinite"/>always ends at 100% · scientifically verified ✦
   </text>
+
+</g>
 </svg>
