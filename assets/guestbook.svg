@@ -1,10 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" role="img" aria-label="the StarScale guestbook with three signed entries">
-<defs><filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
-  <feGaussianBlur stdDeviation=".85" result="b"/>
-  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
-  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter></defs>
-<g filter="url(#artGlow)">
+
+
   <rect width="880" height="250" fill="#171011"/>
   <rect x="20" y="14" width="840" height="222" rx="12" fill="#120c0d" stroke="#f04452" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="7 5"/>
   <text x="440" y="46" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="20" letter-spacing="4" fill="#f04452">📖 ✦ SIGN MY GUESTBOOK ✦ 📖</text>
@@ -20,5 +16,4 @@
   <text x="440" y="200" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="14" fill="#ffb03a">✎ sign it ✎</text>
   <text x="440" y="228" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#8a7a72">guests served: ∞ · comments: 3 · spam: 0 (local-first guestbook ✦)</text>
 
-</g>
 </svg>

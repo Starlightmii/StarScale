@@ -6,12 +6,8 @@
     <linearGradient id="sparkfill" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffb03a" stop-opacity=".28"/><stop offset="1" stop-color="#ffb03a" stop-opacity="0"/>
     </linearGradient>
-  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
-  <feGaussianBlur stdDeviation=".85" result="b"/>
-  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
-  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter></defs>
-<g filter="url(#artGlow)">
+  </defs>
+
   <rect width="880" height="150" fill="#171011"/>
   <text x="30" y="30" font-family="'Courier New',monospace" font-weight="bold" font-size="15" letter-spacing="2" fill="#d8bdb4">★ STARS OVER TIME</text>
   <text x="850" y="30" text-anchor="end" font-family="'Courier New',monospace" font-size="13" fill="#8a7a72">projection: 📈</text>
@@ -49,5 +45,4 @@
   <text x="560" y="144" font-family="'Courier New',monospace" font-size="11" fill="#4a3234">today</text>
   <text x="845" y="144" text-anchor="end" font-family="'Courier New',monospace" font-size="11" fill="#4a3234">soon™</text>
 
-</g>
 </svg>

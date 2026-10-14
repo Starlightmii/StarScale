@@ -1,10 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="470" height="41" viewBox="0 0 470 41" role="img" aria-label="retro 88x31 button wall">
-<defs><filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
-  <feGaussianBlur stdDeviation=".85" result="b"/>
-  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
-  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter></defs>
-<g filter="url(#artGlow)">
+
+
   <rect width="470" height="41" fill="#171011"/>
   <g font-family="'Courier New',monospace" font-weight="bold" font-size="11">
     <!-- button 1 -->
@@ -35,5 +31,4 @@
     <text x="423" y="31" text-anchor="middle" fill="#d8bdb4">✦ ✦ ✦</text>
   </g>
 
-</g>
 </svg>

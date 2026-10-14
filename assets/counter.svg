@@ -4,12 +4,8 @@
       <stop offset="0" stop-color="#1c2a1c"/>
       <stop offset="1" stop-color="#0e160e"/>
     </linearGradient>
-  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
-  <feGaussianBlur stdDeviation=".85" result="b"/>
-  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
-  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter></defs>
-<g filter="url(#artGlow)">
+  </defs>
+
   <rect width="880" height="64" fill="#171011"/>
 
   <text x="250" y="39" text-anchor="end" font-family="'Courier New',monospace" font-size="16" letter-spacing="3" fill="#8a7a72">you are visitor</text>
@@ -38,5 +34,4 @@
     </g>
   </g>
 
-</g>
 </svg>

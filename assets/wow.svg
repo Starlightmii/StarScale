@@ -8,12 +8,8 @@
     </linearGradient>
     <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
     <filter id="blur2"><feGaussianBlur stdDeviation="1.2"/></filter>
-  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
-  <feGaussianBlur stdDeviation=".85" result="b"/>
-  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
-  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter></defs>
-<g filter="url(#artGlow)">
+  </defs>
+
   <rect width="880" height="240" fill="#171011"/>
   <!-- frame -->
   <rect x="14" y="14" width="852" height="212" rx="14" fill="#120c0d" stroke="#382526" stroke-width="1.5"/>
@@ -63,5 +59,4 @@
   </g>
   <text x="440" y="218" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" letter-spacing="3" fill="#d8bdb4">ONE CLICK · SIX SECONDS · ETERNAL CRISPNESS</text>
 
-</g>
 </svg>

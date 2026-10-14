@@ -9,12 +9,8 @@
       <stop offset=".5" stop-color="#ffb03a"/>
       <stop offset="1" stop-color="#f04452" stop-opacity="0"/>
     </linearGradient>
-  <filter id="artGlow" x="-25%" y="-25%" width="150%" height="150%">
-  <feGaussianBlur stdDeviation=".85" result="b"/>
-  <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="g"/>
-  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter></defs>
-<g filter="url(#artGlow)">
+  </defs>
+
   <rect x="150" y="52" width="580" height="2" fill="url(#ffade)"/>
 
   <!-- shooting star: head + fading trail, arcs across -->
@@ -35,5 +31,4 @@
   <text x="440" y="110" text-anchor="middle" font-family="'Courier New',monospace"
         font-size="13" letter-spacing="2" fill="#8a7a72">made under the stars in jaipur — for blurry photos everywhere</text>
 
-</g>
 </svg>
