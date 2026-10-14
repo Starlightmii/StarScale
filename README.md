@@ -90,6 +90,24 @@ and upscale photos with Real-ESRGAN-class neural models or instant WebGL2 kernel
 
 <img src="assets/divider.svg" width="100%" alt="">
 
+## 📸 in the wild
+
+<div align="center">
+
+<table>
+  <tr>
+    <td><img src="assets/screen-landing.webp" width="100%" alt="front door — empty stage, no files, no install"></td>
+    <td><img src="assets/screen-import.webp" width="100%" alt="imported batch, queue dossier, output estimator"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="assets/screen-compare.webp" width="100%" alt="compare mode with brand split divider"></td>
+  </tr>
+</table>
+
+*real screenshots. no render tweaks, no filters, no fakes.*
+
+</div>
+
 ## ⚡ quick start
 
 <div align="center">
