@@ -3909,6 +3909,8 @@ function bindUI() {
       '<span><kbd>+</kbd>&nbsp;<kbd>−</kbd></span><b>Zoom in / out</b>' +
       '<span><kbd>&#8592;&#8594;&#8593;&#8595;</kbd></span><b>Pan (Shift = faster)</b>' +
       '<span><kbd>?</kbd></span><b>This help</b>' +
+      '<span><kbd>F</kbd></span><b>Fullscreen stage</b>' +
+      '<span><kbd>[</kbd>&nbsp;<kbd>]</kbd></span><b>Previous / next image</b>' +
       '<span><kbd>Esc</kbd></span><b>Close dialogs</b>' +
       '</div>' +
       '<h4 class="keysT">Mouse &amp; touch</h4>' +
@@ -5342,6 +5344,9 @@ function bootUI2() {
     else if (e.key === '+' || e.key === '=') { S.zoom = clamp(cur() * 1.25, 0.01, 64); applyView(); }
     else if (e.key === '-') { S.zoom = clamp(cur() / 1.25, 0.01, 64); applyView(); }
     else if (e.key === 'c' || e.key === 'C') { copyResult(); }
+    else if (e.key === 'f' || e.key === 'F') { $('#zFull').click(); }
+    else if (e.key === '[') { const n = S.cur - 1; if (S.items[n]) { S.cur = n; showCurrent(); renderQueue(); } }
+    else if (e.key === ']') { const n = S.cur + 1; if (S.items[n]) { S.cur = n; showCurrent(); renderQueue(); } }
     /* Space pauses a running batch — unless a control has focus,
        where Space belongs to that control */
     else if (e.key === ' ' && S.busy && !(e.target && e.target.matches &&
