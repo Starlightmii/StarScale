@@ -7,8 +7,11 @@
 
 [![release](https://img.shields.io/github/v/release/Starlightmii/StarScale?style=for-the-badge&color=f04452&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/releases)
 [![license](https://img.shields.io/github/license/Starlightmii/StarScale?style=for-the-badge&color=ffb03a&labelColor=1e1415)](LICENSE)
-[![size](https://img.shields.io/badge/app_size-271_KB-6fcf97?style=for-the-badge&labelColor=1e1415)](index.html)
+[![size](https://img.shields.io/badge/app_size-271_KB-ffb03a?style=for-the-badge&labelColor=1e1415)](index.html)
 [![no server](https://img.shields.io/badge/server-NONE_%E2%9C%A6_file%3A%2F%2F_ok-f04452?style=for-the-badge&labelColor=1e1415)](#why-it-works-from-file)
+[![stars](https://img.shields.io/github/stars/Starlightmii/StarScale?style=for-the-badge&color=ffb03a&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/stargazers)
+[![issues](https://img.shields.io/github/issues/Starlightmii/StarScale?style=for-the-badge&color=f04452&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/issues)
+[![prs](https://img.shields.io/badge/PRs-welcome-ffb03a?style=for-the-badge&labelColor=1e1415)](https://github.com/Starlightmii/StarScale/pulls)
 
 **one html file · two engines · zero install**
 
@@ -19,6 +22,26 @@
 <img src="assets/webring.svg" width="100%" alt="starlight webring nav">
 
 <img src="assets/divider.svg" width="100%">
+
+
+<details>
+<summary>&#9654; <b>contents</b></summary>
+
+<br>
+
+- [✦ what is this](#-what-is-this)
+- [⚡ quick start](#-quick-start)
+- [🛰 two engines, one file](#-two-engines-one-file)
+- [🎛 the workspace](#-the-workspace)
+- [📡 transmission](#-transmission-equalizer--counter)
+- [✨ why it works from `file://`](#-why-it-works-from-file)
+- [🎺 retro annex](#-retro-annex)
+- [🔒 privacy](#-privacy)
+- [🧬 sources & credits](#-sources--credits)
+- [🗂 repo layout](#-repo-layout)
+
+</details>
+
 
 ## ✦ what is this
 
